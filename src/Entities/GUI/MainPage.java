@@ -8,6 +8,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class MainPage extends JFrame {
@@ -41,9 +42,11 @@ public class MainPage extends JFrame {
                     @Override
                     public void run() {
                         try {
-                            new StartPage();
-                        } catch (IOException e) {
-                            throw new RuntimeException(e);
+                            new DraftingPage();
+                        } catch (FileNotFoundException ex) {
+                            throw new RuntimeException(ex);
+                        } catch (IOException ex) {
+                            throw new RuntimeException(ex);
                         }
                     }
                 });

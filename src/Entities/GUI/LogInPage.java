@@ -59,7 +59,7 @@ public class LogInPage extends JFrame {
                     throw new RuntimeException(ex);
                 }
                 while(reader.hasNext()){
-                    String[] data = reader.nextLine().split(" ");
+                    String[] data = reader.nextLine().split(";");
                     if (data[0].equals(username.getText().strip()) && data[1].equals(password.getText().strip())){
                         SwingUtilities.invokeLater(new Runnable() {
                             @Override

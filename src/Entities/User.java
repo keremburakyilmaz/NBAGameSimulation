@@ -13,7 +13,6 @@ public class User implements IEntity {
     private String surname;
     private String email;
     private int age;
-    private PrintWriter printWriter;
     private String imagePath;
 
 
@@ -34,7 +33,7 @@ public class User implements IEntity {
             this.age = age;
             File users = new File("src\\Logs\\users.txt");
             FileWriter writer = new FileWriter(users);
-            writer.append(nickname + " " + password + " " + name + " " + surname + " " + email + " " + age + " " +imagePath + " \n");
+            writer.append(nickname + ";" + password + ";" + name + ";" + surname + ";" + email + ";" + age + ";" +imagePath + "\n");
             writer.close();
         } catch (InvalidAgeException e) {
             throw new InvalidAgeException("Invalid Age!");

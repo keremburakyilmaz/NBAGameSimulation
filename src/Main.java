@@ -1,10 +1,11 @@
 import Entities.GUI.StartPage;
 
 import javax.swing.*;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         /************** Pledge of Honor ******************************************
          I hereby certify that I have completed this programming project on my own
          without any help from anyone else. The effort in the project thus belongs
@@ -19,6 +20,8 @@ public class Main {
             public void run() {
                 try {
                     new StartPage();
+                } catch (FileNotFoundException e) {
+                    throw new RuntimeException(e);
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }

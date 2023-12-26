@@ -35,7 +35,7 @@ public class UserValidator {
         File file = new File("src\\Logs\\users.txt");
         Scanner reader = new Scanner(file);
         while(reader.hasNext()){
-            String[] data = reader.nextLine().split(" ");
+            String[] data = reader.nextLine().split(";");
             if (data[0].equals(user.getNickname())|| data[1]. equals(user.getEmail())){
                 throw new AlreadyExistsException("This user already exists!");
             }
