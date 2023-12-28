@@ -7,6 +7,7 @@ public class IPlayer implements IEntity {
     double ast = 0;
     double blk = 0;
     double stl = 0;
+    String position;
 
     public IPlayer(String name, double pts, double trb, double ast, double blk, double stl){
         this.name = name;
@@ -63,5 +64,11 @@ public class IPlayer implements IEntity {
 
     public void setStl(int stl) {
         this.stl = stl;
+    }
+    public String getPosition(){
+        return position;
+    }
+    public void setPosition(String position) {
+        this.position = position;
     }
 }

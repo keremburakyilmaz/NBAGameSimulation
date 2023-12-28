@@ -42,7 +42,7 @@ public class MainPage extends JFrame {
                     @Override
                     public void run() {
                         try {
-                            new DraftingPage();
+                            new DraftingPage(user);
                         } catch (FileNotFoundException ex) {
                             throw new RuntimeException(ex);
                         } catch (IOException ex) {

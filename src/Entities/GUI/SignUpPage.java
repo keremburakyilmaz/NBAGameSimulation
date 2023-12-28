@@ -7,9 +7,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
+import java.io.*;
 
 public class SignUpPage extends JFrame {
     public SignUpPage() {
@@ -67,6 +65,11 @@ public class SignUpPage extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 try {
                     User user = new User(username.getText(), password.getText(), name.getText(), surname.getText(), email.getText(), Integer.parseInt(age.getText()), "src\\Pictures\\ProfilePictures\\pfp-1.png");
+                    File users = new File("src\\Logs\\users.txt");
+                    FileWriter fileWriter = new FileWriter(users, true);
+                    BufferedWriter writer = new BufferedWriter(fileWriter);
+                    writer.append(username.getText() + ";" + password.getText() + ";" + name.getText() + ";" + surname.getText() + ";" + email.getText() + ";" + age.getText() + ";" + "src\\Pictures\\ProfilePictures\\pfp-1.png" + "\n");
+                    writer.close();
                     SwingUtilities.invokeLater(new Runnable() {
                         @Override
                         public void run() {

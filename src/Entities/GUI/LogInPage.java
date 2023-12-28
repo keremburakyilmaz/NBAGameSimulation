@@ -10,6 +10,7 @@ import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class LogInPage extends JFrame {
@@ -46,11 +47,14 @@ public class LogInPage extends JFrame {
         });
 
         JButton logIn = new JButton("Log In");
-        back.setPreferredSize(new Dimension(400,110));
+        logIn.setPreferredSize(new Dimension(400,110));
+        ArrayList<User> users = new ArrayList<>();
         logIn.addActionListener(new ActionListener() {
             @SuppressWarnings("resource")
 			@Override
             public void actionPerformed(ActionEvent e) {
+                boolean exists = false;
+                User tempUser = null;
                 File file = new File("src\\Logs\\users.txt");
                 Scanner reader;
                 try {
@@ -60,36 +64,50 @@ public class LogInPage extends JFrame {
                 }
                 while(reader.hasNext()){
                     String[] data = reader.nextLine().split(";");
-                    if (data[0].equals(username.getText().strip()) && data[1].equals(password.getText().strip())){
-                        SwingUtilities.invokeLater(new Runnable() {
-                            @Override
-                            public void run() {
-                                try {
-                                    new MainPage(new User(data[0], data[1], data[2], data[3], data[4], Integer.parseInt(data[5]), data[6]));
-                                } catch (IOException ex) {
-                                    throw new RuntimeException(ex);
-                                } catch (InvalidAgeException ex) {
-                                    throw new RuntimeException(ex);
-                                } catch (InvalidNameException ex) {
-                                    throw new RuntimeException(ex);
-                                } catch (AlreadyExistsException ex) {
-                                    throw new RuntimeException(ex);
-                                } catch (InvalidPasswordException ex) {
-                                    throw new RuntimeException(ex);
-                                } catch (InvalidUsernameException ex) {
-                                    throw new RuntimeException(ex);
-                                } catch (InvalidEmailException ex) {
-                                    throw new RuntimeException(ex);
-                                }
-                            }
-                        });
-                        dispose();
-                    } else {
-                        JOptionPane.showMessageDialog(null, "No Such User!");
-                        username.setText("");
-                        password.setText("");
+                    try {
+                        users.add(new User(data[0], data[1], data[2], data[3], data[4], Integer.parseInt(data[5]), data[6]));
+                    } catch (IOException ex) {
+                        throw new RuntimeException(ex);
+                    } catch (InvalidAgeException ex) {
+                        throw new RuntimeException(ex);
+                    } catch (InvalidNameException ex) {
+                        throw new RuntimeException(ex);
+                    } catch (AlreadyExistsException ex) {
+                        throw new RuntimeException(ex);
+                    } catch (InvalidPasswordException ex) {
+                        throw new RuntimeException(ex);
+                    } catch (InvalidUsernameException ex) {
+                        throw new RuntimeException(ex);
+                    } catch (InvalidEmailException ex) {
+                        throw new RuntimeException(ex);
                     }
                 }
+                for (User user: users) {
+                    if (user.getNickname().equals(username.getText()) && user.getPassword().equals(password.getText())){
+                        exists = true;
+                        tempUser = user;
+                    }
+                }
+
+                if (exists) {
+                    User finalTempUser = tempUser;
+                    SwingUtilities.invokeLater(new Runnable() {
+                        @Override
+                        public void run() {
+                            try {
+                                new MainPage(finalTempUser);
+                            } catch (IOException ex) {
+                                throw new RuntimeException(ex);
+                            }
+                        }
+                    });
+                    dispose();
+                } else {
+                    JOptionPane.showMessageDialog(null, "No Such User!");
+                    username.setText("");
+                    password.setText("");
+                }
+
             }
         });
 

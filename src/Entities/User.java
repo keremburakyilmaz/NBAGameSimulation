@@ -31,10 +31,6 @@ public class User implements IEntity {
             this.surname = surname;
             this.email = email;
             this.age = age;
-            File users = new File("src\\Logs\\users.txt");
-            FileWriter writer = new FileWriter(users);
-            writer.append(nickname + ";" + password + ";" + name + ";" + surname + ";" + email + ";" + age + ";" +imagePath + "\n");
-            writer.close();
         } catch (InvalidAgeException e) {
             throw new InvalidAgeException("Invalid Age!");
         } catch (InvalidNameException e) {
