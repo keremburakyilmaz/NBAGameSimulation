@@ -15,10 +15,11 @@ public class MainPage extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.user = user;
         setTitle("Main Page");
-        setSize(650, 300);
         setVisible(true);
 
         JButton startDraft = new JButton("Start Draft");
+        startDraft.setFont(new Font("Ariel", Font.PLAIN, 16));
+        startDraft.setBackground(new Color(184,184,184));
         startDraft.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -38,6 +39,8 @@ public class MainPage extends JFrame {
             }
         });
         JButton logOut = new JButton("Log Out");
+        logOut.setFont(new Font("Ariel", Font.PLAIN, 16));
+        logOut.setBackground(new Color(184,184,184));
         logOut.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -56,6 +59,7 @@ public class MainPage extends JFrame {
         });
 
         JButton icon = new JButton(new ImageIcon("src\\Pictures\\settings.png"));
+        icon.setBackground(new Color(184,184,184));
         icon.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -74,12 +78,13 @@ public class MainPage extends JFrame {
         });
 
         JLabel string = new JLabel("Tap on icon to change your information:");
-        logOut.setBounds(35,115,100,25);
-        string.setBounds(10,15,245,45);
-        startDraft.setBounds(175,115,100,25);
-        icon.setBounds(250,10,50,50);
+        string.setFont(new Font("Ariel", Font.PLAIN, 16));
+        logOut.setBounds(20,115,130,25);
+        string.setBounds(10,15,345,45);
+        startDraft.setBounds(225,115,130,25);
+        icon.setBounds(300,10,50,50);
         setLayout(null);
-        setSize(320,190);
+        setSize(380,190);
         add(icon);
         add(string);
         add(logOut);

@@ -23,12 +23,20 @@ public class PlayerViewPage extends JFrame {
         setVisible(true);
 
         close = new JButton ("Close");
+        close.setFont(new Font("Ariel", Font.PLAIN, 16));
+        close.setBackground(new Color(184,184,184));
         playerName = new JLabel(player.getName());
+        playerName.setFont(new Font("Ariel", Font.BOLD, 16));
         pts = new JLabel("Points: " + player.getPts() + ", Weight: " + player.getWeightedPts());
+        pts.setFont(new Font("Ariel", Font.PLAIN, 16));
         trb = new JLabel("Rebounds: " + player.getTrb() + ", Weight: " + player.getWeightedTrb());
+        trb.setFont(new Font("Ariel", Font.PLAIN, 16));
         ast = new JLabel("Assists: " + player.getAst() + ", Weight: " + player.getWeightedAst());
+        ast.setFont(new Font("Ariel", Font.PLAIN, 16));
         blk = new JLabel("Blocks: " + player.getBlk() + ", Weight: " + player.getWeightedBlk());
+        blk.setFont(new Font("Ariel", Font.PLAIN, 16));
         stl = new JLabel("Steals: " + player.getStl() + ", Weight: " + player.getWeightedStl());
+        stl.setFont(new Font("Ariel", Font.PLAIN, 16));
 
         close.setBounds (65, 325, 100, 25);
         playerName.setBounds (15, 20, 195, 30);

@@ -6,7 +6,7 @@ import java.awt.*;
 
 public class CustomCellRenderer extends DefaultListCellRenderer {
     public Component getListCellRendererComponent(JList<?> list, Object value, int index, boolean isSelected, boolean cellHasFocus){
-        JLabel label = (JLabel) super.getListCellRendererComponent(list, value, index, isSelected,cellHasFocus);
+        JLabel label = (JLabel) super.getListCellRendererComponent(list, value, index, false, cellHasFocus);
         label.setBorder(new EmptyBorder(10, 10, 5, 10));
         label.setFont(new Font("Ariel", Font.BOLD, 16));
         label.setOpaque(true);

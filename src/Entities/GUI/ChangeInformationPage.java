@@ -45,6 +45,8 @@ public class ChangeInformationPage extends JFrame {
         }
 
         JButton back = new JButton("<---- Go back");
+        back.setFont(new Font("Ariel", Font.PLAIN, 16));
+        back.setBackground(new Color(184,184,184));
         back.setPreferredSize(new Dimension(400,110));
         back.addActionListener(new ActionListener() {
             @Override
@@ -64,6 +66,8 @@ public class ChangeInformationPage extends JFrame {
         });
 
         JButton update = new JButton("Update");
+        update.setFont(new Font("Ariel", Font.PLAIN, 16));
+        update.setBackground(new Color(184,184,184));
         update.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

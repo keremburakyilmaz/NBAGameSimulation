@@ -28,6 +28,8 @@ public class LogInPage extends JFrame {
         JTextField password = new JPasswordField();
 
         JButton back = new JButton("<---- Go back");
+        back.setFont(new Font("Ariel", Font.PLAIN, 16));
+        back.setBackground(new Color(184,184,184));
         back.setPreferredSize(new Dimension(400,110));
         back.addActionListener(new ActionListener() {
             @Override
@@ -47,6 +49,8 @@ public class LogInPage extends JFrame {
         });
 
         JButton logIn = new JButton("Log In");
+        logIn.setFont(new Font("Ariel", Font.PLAIN, 16));
+        logIn.setBackground(new Color(184,184,184));
         logIn.setPreferredSize(new Dimension(400,110));
         ArrayList<User> users = new ArrayList<>();
         logIn.addActionListener(new ActionListener() {

@@ -24,14 +24,22 @@ public class TeamViewPage extends JFrame {
     public TeamViewPage(Team team) {
         setVisible(true);
         close = new JButton ("Close");
+        close.setFont(new Font("Ariel", Font.PLAIN, 16));
+        close.setBackground(new Color(184,184,184));
         teamName = new JButton ("");
+        teamName.setFont(new Font("Ariel", Font.BOLD, 16));
         player1 = new JButton ("");
+        player1.setFont(new Font("Ariel", Font.PLAIN, 16));
         player2 = new JButton ("");
+        player2.setFont(new Font("Ariel", Font.PLAIN, 16));
         player3 = new JButton ("");
+        player3.setFont(new Font("Ariel", Font.PLAIN, 16));
         player4 = new JButton ("");
+        player4.setFont(new Font("Ariel", Font.PLAIN, 16));
         player5 = new JButton ("");
+        player5.setFont(new Font("Ariel", Font.PLAIN, 16));
 
-        setSize(new Dimension(228,420));
+        setSize(new Dimension(228,430));
         setLayout(null);
 
         close.addActionListener(new ActionListener() {

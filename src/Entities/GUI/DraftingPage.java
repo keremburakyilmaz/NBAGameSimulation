@@ -154,23 +154,42 @@ public class DraftingPage extends JFrame {
         }
 
         jcomp1 = new JComboBox (playerNames.toArray());
+        jcomp1.setRenderer(new CustomCellRenderer());
         teamLabel1 = new JLabel (team1String);
+        teamLabel1.setFont(new Font("Ariel", Font.PLAIN, 16));
         teamLabel2 = new JLabel (team2String);
+        teamLabel2.setFont(new Font("Ariel", Font.PLAIN, 16));
         teamLabel3 = new JLabel (team3String);
+        teamLabel3.setFont(new Font("Ariel", Font.PLAIN, 16));
         teamLabel4 = new JLabel (team4String);
+        teamLabel4.setFont(new Font("Ariel", Font.PLAIN, 16));
         teamLabel5 = new JLabel (team5String);
+        teamLabel5.setFont(new Font("Ariel", Font.PLAIN, 16));
         teamLabel6 = new JLabel (team6String);
+        teamLabel6.setFont(new Font("Ariel", Font.PLAIN, 16));
         teamLabel7 = new JLabel (team7String);
+        teamLabel7.setFont(new Font("Ariel", Font.PLAIN, 16));
         teamLabel8 = new JLabel (team8String);
+        teamLabel8.setFont(new Font("Ariel", Font.PLAIN, 16));
         teamLabel9 = new JLabel (team9String);
+        teamLabel9.setFont(new Font("Ariel", Font.PLAIN, 16));
         teamLabel10 = new JLabel (team10String);
+        teamLabel10.setFont(new Font("Ariel", Font.PLAIN, 16));
         teamLabel11 = new JLabel (team11String);
+        teamLabel11.setFont(new Font("Ariel", Font.PLAIN, 16));
         teamLabel12 = new JLabel (team12String);
+        teamLabel12.setFont(new Font("Ariel", Font.PLAIN, 16));
         teamLabel13 = new JLabel (team13String);
+        teamLabel13.setFont(new Font("Ariel", Font.PLAIN, 16));
         teamLabel14 = new JLabel (team14String);
+        teamLabel14.setFont(new Font("Ariel", Font.PLAIN, 16));
         teamLabel15 = new JLabel (team15String);
+        teamLabel15.setFont(new Font("Ariel", Font.PLAIN, 16));
         teamLabel16 = new JLabel (team16String);
+        teamLabel16.setFont(new Font("Ariel", Font.PLAIN, 16));
         select = new JButton ("Select Player");
+        select.setFont(new Font("Ariel", Font.PLAIN, 16));
+        select.setBackground(new Color(184,184,184));
         select.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -656,6 +675,8 @@ public class DraftingPage extends JFrame {
         });
 
         startSeason = new JButton ("Start Season");
+        startSeason.setFont(new Font("Ariel", Font.PLAIN, 16));
+        startSeason.setBackground(new Color(184,184,184));
         startSeason.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -691,6 +712,8 @@ public class DraftingPage extends JFrame {
         });
 
         back = new JButton("Go Back");
+        back.setFont(new Font("Ariel", Font.PLAIN, 16));
+        back.setBackground(new Color(184,184,184));
         back.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -708,22 +731,22 @@ public class DraftingPage extends JFrame {
             }
         });
 
-        teamLabel1.setBackground(new Color(102,102,153));
-        teamLabel2.setBackground(new Color(102,102,153));
-        teamLabel3.setBackground(new Color(102,102,153));
-        teamLabel4.setBackground(new Color(102,102,153));
-        teamLabel5.setBackground(new Color(102,102,153));
-        teamLabel6.setBackground(new Color(102,102,153));
-        teamLabel7.setBackground(new Color(102,102,153));
-        teamLabel8.setBackground(new Color(102,102,153));
-        teamLabel9.setBackground(new Color(102,102,153));
-        teamLabel10.setBackground(new Color(102,102,153));
-        teamLabel11.setBackground(new Color(102,102,153));
-        teamLabel12.setBackground(new Color(102,102,153));
-        teamLabel13.setBackground(new Color(102,102,153));
-        teamLabel14.setBackground(new Color(102,102,153));
-        teamLabel15.setBackground(new Color(102,102,153));
-        teamLabel16.setBackground(new Color(102,102,153));
+        teamLabel1.setForeground(new Color(102,102,153));
+        teamLabel2.setForeground(new Color(102,102,153));
+        teamLabel3.setForeground(new Color(102,102,153));
+        teamLabel4.setForeground(new Color(102,102,153));
+        teamLabel5.setForeground(new Color(102,102,153));
+        teamLabel6.setForeground(new Color(102,102,153));
+        teamLabel7.setForeground(new Color(102,102,153));
+        teamLabel8.setForeground(new Color(102,102,153));
+        teamLabel9.setForeground(new Color(102,102,153));
+        teamLabel10.setForeground(new Color(102,102,153));
+        teamLabel11.setForeground(new Color(102,102,153));
+        teamLabel12.setForeground(new Color(102,102,153));
+        teamLabel13.setForeground(new Color(102,102,153));
+        teamLabel14.setForeground(new Color(102,102,153));
+        teamLabel15.setForeground(new Color(102,102,153));
+        teamLabel16.setForeground(new Color(102,102,153));
 
         add (jcomp1);
         add (select);
@@ -744,21 +767,53 @@ public class DraftingPage extends JFrame {
         add (teamLabel15);
         add (teamLabel16);
         JButton teamButton1 = new JButton("View Team Players");
+        teamButton1.setFont(new Font("Ariel", Font.PLAIN, 13));
+        teamButton1.setBackground(new Color(184,184,184));
         JButton teamButton2 = new JButton("View Team Players");
+        teamButton2.setFont(new Font("Ariel", Font.PLAIN, 13));
+        teamButton2.setBackground(new Color(184,184,184));
         JButton teamButton3 = new JButton("View Team Players");
+        teamButton3.setFont(new Font("Ariel", Font.PLAIN, 13));
+        teamButton3.setBackground(new Color(184,184,184));
         JButton teamButton4 = new JButton("View Team Players");
+        teamButton4.setFont(new Font("Ariel", Font.PLAIN, 13));
+        teamButton4.setBackground(new Color(184,184,184));
         JButton teamButton5 = new JButton("View Team Players");
+        teamButton5.setFont(new Font("Ariel", Font.PLAIN, 13));
+        teamButton5.setBackground(new Color(184,184,184));
         JButton teamButton6 = new JButton("View Team Players");
+        teamButton6.setFont(new Font("Ariel", Font.PLAIN, 13));
+        teamButton6.setBackground(new Color(184,184,184));
         JButton teamButton7 = new JButton("View Team Players");
+        teamButton7.setFont(new Font("Ariel", Font.PLAIN, 13));
+        teamButton7.setBackground(new Color(184,184,184));
         JButton teamButton8 = new JButton("View Team Players");
+        teamButton8.setFont(new Font("Ariel", Font.PLAIN, 13));
+        teamButton8.setBackground(new Color(184,184,184));
         JButton teamButton9 = new JButton("View Team Players");
+        teamButton9.setFont(new Font("Ariel", Font.PLAIN, 13));
+        teamButton9.setBackground(new Color(184,184,184));
         JButton teamButton10 = new JButton("View Team Players");
+        teamButton10.setFont(new Font("Ariel", Font.PLAIN, 13));
+        teamButton10.setBackground(new Color(184,184,184));
         JButton teamButton11 = new JButton("View Team Players");
+        teamButton11.setFont(new Font("Ariel", Font.PLAIN, 13));
+        teamButton11.setBackground(new Color(184,184,184));
         JButton teamButton12 = new JButton("View Team Players");
+        teamButton12.setFont(new Font("Ariel", Font.PLAIN, 13));
+        teamButton12.setBackground(new Color(184,184,184));
         JButton teamButton13 = new JButton("View Team Players");
+        teamButton13.setFont(new Font("Ariel", Font.PLAIN, 13));
+        teamButton13.setBackground(new Color(184,184,184));
         JButton teamButton14 = new JButton("View Team Players");
+        teamButton14.setFont(new Font("Ariel", Font.PLAIN, 13));
+        teamButton14.setBackground(new Color(184,184,184));
         JButton teamButton15 = new JButton("View Team Players");
+        teamButton15.setFont(new Font("Ariel", Font.PLAIN, 13));
+        teamButton15.setBackground(new Color(184,184,184));
         JButton teamButton16 = new JButton("View Team Players");
+        teamButton16.setFont(new Font("Ariel", Font.PLAIN, 13));
+        teamButton16.setBackground(new Color(184,184,184));
         add(teamButton1);
         add(teamButton2);
         add(teamButton3);

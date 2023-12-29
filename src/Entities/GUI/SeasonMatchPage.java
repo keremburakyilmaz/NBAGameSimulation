@@ -27,15 +27,21 @@ public class SeasonMatchPage extends JFrame {
         this.teams = teams;
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setTitle("Season Matches!");
-        setSize (new Dimension(651, 850));
+        setSize (new Dimension(671, 850));
         setLayout (null);
 
         DefaultListModel<String> seasonMatchList = new DefaultListModel<>();
         teamsList = new JList(seasonMatchList);
         teamsList.setCellRenderer(new CustomCellRenderer());
         pause = new JButton ("Pause");
+        pause.setFont(new Font("Ariel", Font.PLAIN, 16));
+        pause.setBackground(new Color(184,184,184));
         startSeason = new JButton ("Start Season");
-        viewTeam = new JButton ("View Your Team");
+        startSeason.setFont(new Font("Ariel", Font.PLAIN, 16));
+        startSeason.setBackground(new Color(184,184,184));
+        viewTeam = new JButton ("View You Team");
+        viewTeam.setFont(new Font("Ariel", Font.PLAIN, 16));
+        viewTeam.setBackground(new Color(184,184,184));
 
         for (Team team: teams) {
             double score = 0;
@@ -144,7 +150,7 @@ public class SeasonMatchPage extends JFrame {
         teamsList.setBounds (0, 0, 670, 710);
         pause.setBounds (55, 740, 140, 35);
         startSeason.setBounds (250, 740, 140, 35);
-        viewTeam.setBounds (445, 740, 140, 35);
+        viewTeam.setBounds (445, 740, 160, 35);
 
         add (teamsList);
         add (pause);

@@ -12,7 +12,7 @@ import java.io.*;
 public class SignUpPage extends JFrame {
     public SignUpPage() {
         setTitle("Sign Up Page");
-        setSize(800,600);
+        setSize(800,595);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         JLabel username_ = new JLabel("Username: ");
@@ -40,6 +40,8 @@ public class SignUpPage extends JFrame {
         JTextField email = new JTextField();
 
         JButton back = new JButton("<---- Go back");
+        back.setFont(new Font("Ariel", Font.PLAIN, 16));
+        back.setBackground(new Color(184,184,184));
         back.setPreferredSize(new Dimension(400,110));
         back.addActionListener(new ActionListener() {
             @Override
@@ -59,6 +61,8 @@ public class SignUpPage extends JFrame {
         });
 
         JButton signUp = new JButton("Sign Up");
+        signUp.setFont(new Font("Ariel", Font.PLAIN, 16));
+        signUp.setBackground(new Color(184,184,184));
         signUp.setPreferredSize(new Dimension(400,110));
         signUp.addActionListener(new ActionListener() {
             @Override
