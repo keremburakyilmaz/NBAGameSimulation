@@ -2,12 +2,10 @@ package Entities.GUI;
 
 import Entities.User;
 
-import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
@@ -19,22 +17,8 @@ public class MainPage extends JFrame {
         setTitle("Main Page");
         setSize(650, 300);
         setVisible(true);
-        ImageIcon pfp = new ImageIcon("src\\Pictures\\ProfilePictures\\pfp-1.png");
-        JButton pfpButton = new JButton(pfp);
-        pfpButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                SwingUtilities.invokeLater(new Runnable() {
-                    @Override
-                    public void run() {
-                        new ChangeInformationPage(user);
-                    }
-                });
-                dispose();
-            }
-        });
 
-        JButton startDraft = new JButton("Start drafting");
+        JButton startDraft = new JButton("Start Draft");
         startDraft.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -71,9 +55,33 @@ public class MainPage extends JFrame {
             }
         });
 
-        setLayout(new GridLayout(2,2,30,30));
-        add(new JLabel("To change your information, click on your profile picture:"));
-        add(pfpButton);
+        JButton icon = new JButton(new ImageIcon("src\\Pictures\\settings.png"));
+        icon.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                SwingUtilities.invokeLater(new Runnable() {
+                    @Override
+                    public void run() {
+                        try {
+                            new ChangeInformationPage(user);
+                        } catch (FileNotFoundException ex) {
+                            throw new RuntimeException(ex);
+                        }
+                    }
+                });
+                dispose();
+            }
+        });
+
+        JLabel string = new JLabel("Tap on icon to change your information:");
+        logOut.setBounds(35,115,100,25);
+        string.setBounds(10,15,245,45);
+        startDraft.setBounds(175,115,100,25);
+        icon.setBounds(250,10,50,50);
+        setLayout(null);
+        setSize(320,190);
+        add(icon);
+        add(string);
         add(logOut);
         add(startDraft);
 

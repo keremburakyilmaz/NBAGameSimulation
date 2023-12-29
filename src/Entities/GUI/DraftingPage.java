@@ -17,21 +17,37 @@ public class DraftingPage extends JFrame {
     private JComboBox jcomp1;
     private JButton select;
     private JLabel teamLabel1;
+    private String team1String = "";
     private JLabel teamLabel2;
+    private String team2String = "";
     private JLabel teamLabel3;
+    private String team3String = "";
     private JLabel teamLabel4;
+    private String team4String = "";
     private JLabel teamLabel5;
+    private String team5String = "";
     private JLabel teamLabel6;
+    private String team6String = "";
     private JLabel teamLabel7;
+    private String team7String = "";
     private JLabel teamLabel8;
+    private String team8String = "";
     private JLabel teamLabel9;
+    private String team9String = "";
     private JLabel teamLabel10;
+    private String team10String = "";
     private JLabel teamLabel11;
+    private String team11String = "";
     private JLabel teamLabel12;
+    private String team12String = "";
     private JLabel teamLabel13;
+    private String team13String = "";
     private JLabel teamLabel14;
+    private String team14String = "";
     private JLabel teamLabel15;
+    private String team15String = "";
     private JLabel teamLabel16;
+    private String team16String = "";
     private JButton startSeason;
     private JButton back;
     boolean isC = false;
@@ -40,7 +56,7 @@ public class DraftingPage extends JFrame {
     boolean isSF = false;
     boolean isSG = false;
     Set<String> playerNames = new TreeSet<>();
-
+    ArrayList<Team> teams = new ArrayList<>();
     private int number = 0;
     public DraftingPage(User user) throws IOException {
 
@@ -59,22 +75,38 @@ public class DraftingPage extends JFrame {
         ArrayList<IPlayer> PG_players = new ArrayList<>();
         ArrayList<IPlayer> SF_players = new ArrayList<>();
         ArrayList<IPlayer> SG_players = new ArrayList<>();
-        Team team1 = new Team("KU Angeles Lakers", null);
-        Team team2 = new Team("Boston KUltics", null);;
-        Team team3 = new Team("ChicaKU Bulls", null);;
-        Team team4 = new Team("Golden KU Warriors", null);;
-        Team team5 = new Team("MiaKU Heats", null);;
-        Team team6 = new Team("Toronto RaptorKUs", null);;
-        Team team7 = new Team("KUladelphia 76ers", null);;
-        Team team8 = new Team("WasKUngton Wizards", null);;
-        Team team9 = new Team("KUleveland Cavaliers", null);;
-        Team team10 = new Team("Houston RocKUts", null);;
-        Team team11 = new Team("Atlanta HawKU", null);;
-        Team team12 = new Team("KUharlotte Hornets", null);;
-        Team team13 = new Team("New Orleans PeliKUns", null);;
-        Team team14 = new Team("KU Antonio Spurs", null);;
-        Team team15 = new Team("Minnesota TimberKUs", null);;
-        Team team16 = new Team("Memphis KUrizzlies", null);;
+        Team team1 = new Team(user.getName() + "'s Team", null);
+        team1String += user.getName() + "'s Team \n";
+        Team team2 = new Team("Boston KUltics", null);
+        team2String += team2.getName() + "\n";
+        Team team3 = new Team("ChicaKU Bulls", null);
+        team3String += team3.getName() + "\n";
+        Team team4 = new Team("Golden KU Warriors", null);
+        team4String += team4.getName() + "\n";
+        Team team5 = new Team("MiaKU Heats", null);
+        team5String += team5.getName() + "\n";
+        Team team6 = new Team("Toronto RaptorKUs", null);
+        team6String += team6.getName() + "\n";
+        Team team7 = new Team("KUladelphia 76ers", null);
+        team7String += team7.getName() + "\n";
+        Team team8 = new Team("WasKUngton Wizards", null);
+        team8String = team8.getName() + "\n";
+        Team team9 = new Team("KUleveland Cavaliers", null);
+        team9String += team9.getName() + "\n";
+        Team team10 = new Team("Houston RocKUts", null);
+        team10String += team10.getName() + "\n";
+        Team team11 = new Team("Atlanta HawKU", null);
+        team11String += team11.getName() + "\n";
+        Team team12 = new Team("KUharlotte Hornets", null);
+        team12String += team12.getName() + "\n";
+        Team team13 = new Team("New Orleans PeliKUns", null);
+        team13String += team13.getName() + "\n";
+        Team team14 = new Team("KU Antonio Spurs", null);
+        team14String += team14.getName() + "\n";
+        Team team15 = new Team("Minnesota TimberKUs", null);
+        team15String += team15.getName() + "\n";
+        Team team16 = new Team("Memphis KUrizzlies", null);
+        team16String += team16.getName() + "\n";
 
 
         BufferedReader fileReader = new BufferedReader(new FileReader("src\\Logs\\2022-2023-NBA-Player-Stats-Regular.csv"));
@@ -122,22 +154,22 @@ public class DraftingPage extends JFrame {
         }
 
         jcomp1 = new JComboBox (playerNames.toArray());
-        teamLabel1 = new JLabel (team1.getName());
-        teamLabel2 = new JLabel (team2.getName());
-        teamLabel3 = new JLabel (team3.getName());
-        teamLabel4 = new JLabel (team4.getName());
-        teamLabel5 = new JLabel (team5.getName());
-        teamLabel6 = new JLabel (team6.getName());
-        teamLabel7 = new JLabel (team7.getName());
-        teamLabel8 = new JLabel (team8.getName());
-        teamLabel9 = new JLabel (team9.getName());
-        teamLabel10 = new JLabel (team10.getName());
-        teamLabel11 = new JLabel (team11.getName());
-        teamLabel12 = new JLabel (team12.getName());
-        teamLabel13 = new JLabel (team13.getName());
-        teamLabel14 = new JLabel (team14.getName());
-        teamLabel15 = new JLabel (team15.getName());
-        teamLabel16 = new JLabel (team16.getName());
+        teamLabel1 = new JLabel (team1String);
+        teamLabel2 = new JLabel (team2String);
+        teamLabel3 = new JLabel (team3String);
+        teamLabel4 = new JLabel (team4String);
+        teamLabel5 = new JLabel (team5String);
+        teamLabel6 = new JLabel (team6String);
+        teamLabel7 = new JLabel (team7String);
+        teamLabel8 = new JLabel (team8String);
+        teamLabel9 = new JLabel (team9String);
+        teamLabel10 = new JLabel (team10String);
+        teamLabel11 = new JLabel (team11String);
+        teamLabel12 = new JLabel (team12String);
+        teamLabel13 = new JLabel (team13String);
+        teamLabel14 = new JLabel (team14String);
+        teamLabel15 = new JLabel (team15String);
+        teamLabel16 = new JLabel (team16String);
         select = new JButton ("Select Player");
         select.addActionListener(new ActionListener() {
             @Override
@@ -149,7 +181,7 @@ public class DraftingPage extends JFrame {
                     double selectedBlk = 0;
                     double selectedStl = 0;
                     String selectedPos = "";
-                    double count = 0;
+                    int count = 0;
 
                     String selectedPlayerName = jcomp1.getSelectedItem().toString();
                     for(IPlayer selectedPlayer: players) {
@@ -163,33 +195,422 @@ public class DraftingPage extends JFrame {
                             count++;
                         }
                     }
+
+                    int randomIndex;
+
                     switch (selectedPos) {
                         case "C":
                             isC = true;
                             team1.addPlayer(new C_Player(selectedPlayerName, selectedPts / count, selectedTrb / count, selectedAst / count, selectedBlk / count, selectedStl / count));
+                            team1String += selectedPlayerName + "\n";
+
+                            randomIndex = new Random().nextInt(C_players.size());
+                            team2.addPlayer(C_players.get(randomIndex));
+                            team2String += C_players.get(randomIndex).getName() + "\n";
+                            C_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(C_players.size());
+                            team3.addPlayer(C_players.get(randomIndex));
+                            team3String += C_players.get(randomIndex).getName() + "\n";
+                            C_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(C_players.size());
+                            team4.addPlayer(C_players.get(randomIndex));
+                            team4String += C_players.get(randomIndex).getName() + "\n";
+                            C_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(C_players.size());
+                            team5.addPlayer(C_players.get(randomIndex));
+                            team5String += C_players.get(randomIndex).getName() + "\n";
+                            C_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(C_players.size());
+                            team6.addPlayer(C_players.get(randomIndex));
+                            team6String += C_players.get(randomIndex).getName() + "\n";
+                            C_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(C_players.size());
+                            team7.addPlayer(C_players.get(randomIndex));
+                            team7String += C_players.get(randomIndex).getName() + "\n";
+                            C_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(C_players.size());
+                            team8.addPlayer(C_players.get(randomIndex));
+                            team8String += C_players.get(randomIndex).getName() + "\n";
+                            C_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(C_players.size());
+                            team9.addPlayer(C_players.get(randomIndex));
+                            team9String += C_players.get(randomIndex).getName() + "\n";
+                            C_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(C_players.size());
+                            team10.addPlayer(C_players.get(randomIndex));
+                            team10String += C_players.get(randomIndex).getName() + "\n";
+                            C_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(C_players.size());
+                            team11.addPlayer(C_players.get(randomIndex));
+                            team11String += C_players.get(randomIndex).getName() + "\n";
+                            C_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(C_players.size());
+                            team12.addPlayer(C_players.get(randomIndex));
+                            team12String += C_players.get(randomIndex).getName() + "\n";
+                            C_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(C_players.size());
+                            team13.addPlayer(C_players.get(randomIndex));
+                            team13String += C_players.get(randomIndex).getName() + "\n";
+                            C_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(C_players.size());
+                            team14.addPlayer(C_players.get(randomIndex));
+                            team14String += C_players.get(randomIndex).getName() + "\n";
+                            C_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(C_players.size());
+                            team15.addPlayer(C_players.get(randomIndex));
+                            team15String += C_players.get(randomIndex).getName() + "\n";
+                            C_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(C_players.size());
+                            team16.addPlayer(C_players.get(randomIndex));
+                            team16String += C_players.get(randomIndex).getName() + "\n";
+                            C_players.remove(randomIndex);
+
                             break;
                         case "PF":
                             isPF = true;
                             team1.addPlayer(new PF_Player(selectedPlayerName, selectedPts / count, selectedTrb / count, selectedAst / count, selectedBlk / count, selectedStl / count));
+                            team1String += selectedPlayerName + "\n";
+
+                            randomIndex = new Random().nextInt(PF_players.size());
+                            team2.addPlayer(PF_players.get(randomIndex));
+                            team2String += PF_players.get(randomIndex).getName() + "\n";
+                            PF_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(PF_players.size());
+                            team3.addPlayer(PF_players.get(randomIndex));
+                            team3String += PF_players.get(randomIndex).getName() + "\n";
+                            PF_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(PF_players.size());
+                            team4.addPlayer(PF_players.get(randomIndex));
+                            team4String += PF_players.get(randomIndex).getName() + "\n";
+                            PF_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(PF_players.size());
+                            team5.addPlayer(PF_players.get(randomIndex));
+                            team5String += PF_players.get(randomIndex).getName() + "\n";
+                            PF_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(PF_players.size());
+                            team6.addPlayer(PF_players.get(randomIndex));
+                            team6String += PF_players.get(randomIndex).getName() + "\n";
+                            PF_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(PF_players.size());
+                            team7.addPlayer(PF_players.get(randomIndex));
+                            team7String += PF_players.get(randomIndex).getName() + "\n";
+                            PF_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(PF_players.size());
+                            team8.addPlayer(PF_players.get(randomIndex));
+                            team8String += PF_players.get(randomIndex).getName() + "\n";
+                            PF_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(PF_players.size());
+                            team9.addPlayer(PF_players.get(randomIndex));
+                            team9String += PF_players.get(randomIndex).getName() + "\n";
+                            PF_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(PF_players.size());
+                            team10.addPlayer(PF_players.get(randomIndex));
+                            team10String += PF_players.get(randomIndex).getName() + "\n";
+                            PF_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(PF_players.size());
+                            team11.addPlayer(PF_players.get(randomIndex));
+                            team11String += PF_players.get(randomIndex).getName() + "\n";
+                            PF_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(PF_players.size());
+                            team12.addPlayer(PF_players.get(randomIndex));
+                            team12String += PF_players.get(randomIndex).getName() + "\n";
+                            PF_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(PF_players.size());
+                            team13.addPlayer(PF_players.get(randomIndex));
+                            team13String += PF_players.get(randomIndex).getName() + "\n";
+                            PF_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(PF_players.size());
+                            team14.addPlayer(PF_players.get(randomIndex));
+                            team14String += PF_players.get(randomIndex).getName() + "\n";
+                            PF_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(PF_players.size());
+                            team15.addPlayer(PF_players.get(randomIndex));
+                            team15String += PF_players.get(randomIndex).getName() + "\n";
+                            PF_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(PF_players.size());
+                            team16.addPlayer(PF_players.get(randomIndex));
+                            team16String += PF_players.get(randomIndex).getName() + "\n";
+                            PF_players.remove(randomIndex);
+
                             break;
                         case "PG":
                             isPG = true;
                             team1.addPlayer(new PG_Player(selectedPlayerName, selectedPts / count, selectedTrb / count, selectedAst / count, selectedBlk / count, selectedStl / count));
+                            team1String += selectedPlayerName + "\n";
+
+                            randomIndex = new Random().nextInt(PG_players.size());
+                            team2.addPlayer(PG_players.get(randomIndex));
+                            team2String += PG_players.get(randomIndex).getName() + "\n";
+                            PG_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(PG_players.size());
+                            team3.addPlayer(PG_players.get(randomIndex));
+                            team3String += PG_players.get(randomIndex).getName() + "\n";
+                            PG_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(PG_players.size());
+                            team4.addPlayer(PG_players.get(randomIndex));
+                            team4String += PG_players.get(randomIndex).getName() + "\n";
+                            PG_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(PG_players.size());
+                            team5.addPlayer(PG_players.get(randomIndex));
+                            team5String += PG_players.get(randomIndex).getName() + "\n";
+                            PG_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(PG_players.size());
+                            team6.addPlayer(PG_players.get(randomIndex));
+                            team6String += PG_players.get(randomIndex).getName() + "\n";
+                            PG_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(PG_players.size());
+                            team7.addPlayer(PG_players.get(randomIndex));
+                            team7String += PG_players.get(randomIndex).getName() + "\n";
+                            PG_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(PG_players.size());
+                            team8.addPlayer(PG_players.get(randomIndex));
+                            team8String += PG_players.get(randomIndex).getName() + "\n";
+                            PG_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(PG_players.size());
+                            team9.addPlayer(PG_players.get(randomIndex));
+                            team9String += PG_players.get(randomIndex).getName() + "\n";
+                            PG_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(PG_players.size());
+                            team10.addPlayer(PG_players.get(randomIndex));
+                            team10String += PG_players.get(randomIndex).getName() + "\n";
+                            PG_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(PG_players.size());
+                            team11.addPlayer(PG_players.get(randomIndex));
+                            team11String += PG_players.get(randomIndex).getName() + "\n";
+                            PG_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(PG_players.size());
+                            team12.addPlayer(PG_players.get(randomIndex));
+                            team12String += PG_players.get(randomIndex).getName() + "\n";
+                            PG_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(PG_players.size());
+                            team13.addPlayer(PG_players.get(randomIndex));
+                            team13String += PG_players.get(randomIndex).getName() + "\n";
+                            PG_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(PG_players.size());
+                            team14.addPlayer(PG_players.get(randomIndex));
+                            team14String += PG_players.get(randomIndex).getName() + "\n";
+                            PG_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(PG_players.size());
+                            team15.addPlayer(PG_players.get(randomIndex));
+                            team15String += PG_players.get(randomIndex).getName() + "\n";
+                            PG_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(PG_players.size());
+                            team16.addPlayer(PG_players.get(randomIndex));
+                            team16String += PG_players.get(randomIndex).getName() + "\n";
+                            PG_players.remove(randomIndex);
+
                             break;
                         case "SF":
                             isSF = true;
                             team1.addPlayer(new SF_Player(selectedPlayerName, selectedPts / count, selectedTrb / count, selectedAst / count, selectedBlk / count, selectedStl / count));
+                            team1String += selectedPlayerName + "\n";
+
+                            randomIndex = new Random().nextInt(SF_players.size());
+                            team2.addPlayer(SF_players.get(randomIndex));
+                            team2String += SF_players.get(randomIndex).getName() + "\n";
+                            SF_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(SF_players.size());
+                            team3.addPlayer(SF_players.get(randomIndex));
+                            team3String += SF_players.get(randomIndex).getName() + "\n";
+                            SF_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(SF_players.size());
+                            team4.addPlayer(SF_players.get(randomIndex));
+                            team4String += SF_players.get(randomIndex).getName() + "\n";
+                            SF_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(SF_players.size());
+                            team5.addPlayer(SF_players.get(randomIndex));
+                            team5String += SF_players.get(randomIndex).getName() + "\n";
+                            SF_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(SF_players.size());
+                            team6.addPlayer(SF_players.get(randomIndex));
+                            team6String += SF_players.get(randomIndex).getName() + "\n";
+                            SF_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(SF_players.size());
+                            team7.addPlayer(SF_players.get(randomIndex));
+                            team7String += SF_players.get(randomIndex).getName() + "\n";
+                            SF_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(SF_players.size());
+                            team8.addPlayer(SF_players.get(randomIndex));
+                            team8String += SF_players.get(randomIndex).getName() + "\n";
+                            SF_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(SF_players.size());
+                            team9.addPlayer(SF_players.get(randomIndex));
+                            team9String += SF_players.get(randomIndex).getName() + "\n";
+                            SF_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(SF_players.size());
+                            team10.addPlayer(SF_players.get(randomIndex));
+                            team10String += SF_players.get(randomIndex).getName() + "\n";
+                            SF_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(SF_players.size());
+                            team11.addPlayer(SF_players.get(randomIndex));
+                            team11String += SF_players.get(randomIndex).getName() + "\n";
+                            SF_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(SF_players.size());
+                            team12.addPlayer(SF_players.get(randomIndex));
+                            team12String += SF_players.get(randomIndex).getName() + "\n";
+                            SF_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(SF_players.size());
+                            team13.addPlayer(SF_players.get(randomIndex));
+                            team13String += SF_players.get(randomIndex).getName() + "\n";
+                            SF_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(SF_players.size());
+                            team14.addPlayer(SF_players.get(randomIndex));
+                            team14String += SF_players.get(randomIndex).getName() + "\n";
+                            SF_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(SF_players.size());
+                            team15.addPlayer(SF_players.get(randomIndex));
+                            team15String += SF_players.get(randomIndex).getName() + "\n";
+                            SF_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(SF_players.size());
+                            team16.addPlayer(SF_players.get(randomIndex));
+                            team16String += SF_players.get(randomIndex).getName() + "\n";
+                            SF_players.remove(randomIndex);
+
                             break;
                         case "SG":
                             isSG = true;
                             team1.addPlayer(new SG_Player(selectedPlayerName, selectedPts / count, selectedTrb / count, selectedAst / count, selectedBlk / count, selectedStl / count));
+                            team1String += selectedPlayerName + "\n";
+
+                            randomIndex = new Random().nextInt(SG_players.size());
+                            team2.addPlayer(SG_players.get(randomIndex));
+                            team2String += SG_players.get(randomIndex).getName() + "\n";
+                            SG_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(SG_players.size());
+                            team3.addPlayer(SG_players.get(randomIndex));
+                            team3String += SG_players.get(randomIndex).getName() + "\n";
+                            SG_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(SG_players.size());
+                            team4.addPlayer(SG_players.get(randomIndex));
+                            team4String += SG_players.get(randomIndex).getName() + "\n";
+                            SG_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(SG_players.size());
+                            team5.addPlayer(SG_players.get(randomIndex));
+                            team5String += SG_players.get(randomIndex).getName() + "\n";
+                            SG_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(SG_players.size());
+                            team6.addPlayer(SG_players.get(randomIndex));
+                            team6String += SG_players.get(randomIndex).getName() + "\n";
+                            SG_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(SG_players.size());
+                            team7.addPlayer(SG_players.get(randomIndex));
+                            team7String += SG_players.get(randomIndex).getName() + "\n";
+                            SG_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(SG_players.size());
+                            team8.addPlayer(SG_players.get(randomIndex));
+                            team8String += SG_players.get(randomIndex).getName() + "\n";
+                            SG_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(SG_players.size());
+                            team9.addPlayer(SG_players.get(randomIndex));
+                            team9String += SG_players.get(randomIndex).getName() + "\n";
+                            SG_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(SG_players.size());
+                            team10.addPlayer(SG_players.get(randomIndex));
+                            team10String += SG_players.get(randomIndex).getName() + "\n";
+                            SG_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(SG_players.size());
+                            team11.addPlayer(SG_players.get(randomIndex));
+                            team11String += SG_players.get(randomIndex).getName() + "\n";
+                            SG_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(SG_players.size());
+                            team12.addPlayer(SG_players.get(randomIndex));
+                            team12String += SG_players.get(randomIndex).getName() + "\n";
+                            SG_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(SG_players.size());
+                            team13.addPlayer(SG_players.get(randomIndex));
+                            team13String += SG_players.get(randomIndex).getName() + "\n";
+                            SG_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(SG_players.size());
+                            team14.addPlayer(SG_players.get(randomIndex));
+                            team14String += SG_players.get(randomIndex).getName() + "\n";
+                            SG_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(SG_players.size());
+                            team15.addPlayer(SG_players.get(randomIndex));
+                            team15String += SG_players.get(randomIndex).getName() + "\n";
+                            SG_players.remove(randomIndex);
+
+                            randomIndex = new Random().nextInt(SG_players.size());
+                            team16.addPlayer(SG_players.get(randomIndex));
+                            team16String += SG_players.get(randomIndex).getName() + "\n";
+                            SG_players.remove(randomIndex);
+
                             break;
 
                     }
 
+
+
                     jcomp1.removeAllItems();
 
-                    System.out.println(playerNames);
                     playerNames = new TreeSet<>();
 
                     if (!isC){
@@ -226,7 +647,6 @@ public class DraftingPage extends JFrame {
                         jcomp1.addItem(string);
                     }
 
-                    System.out.println(playerNames);
                     number ++;
                 } else {
                     JOptionPane.showMessageDialog(null, "Can only select 5 players!");
@@ -236,8 +656,41 @@ public class DraftingPage extends JFrame {
         });
 
         startSeason = new JButton ("Start Season");
-        back = new JButton("Go Back");
+        startSeason.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (number == 5) {
+                    teams.add(team1);
+                    teams.add(team2);
+                    teams.add(team3);
+                    teams.add(team4);
+                    teams.add(team5);
+                    teams.add(team6);
+                    teams.add(team7);
+                    teams.add(team8);
+                    teams.add(team9);
+                    teams.add(team10);
+                    teams.add(team11);
+                    teams.add(team12);
+                    teams.add(team13);
+                    teams.add(team14);
+                    teams.add(team15);
+                    teams.add(team16);
+                    SwingUtilities.invokeLater(new Runnable() {
+                        @Override
+                        public void run() {
+                            new SeasonMatchPage(teams);
+                        }
+                    });
+                    dispose();
+                } else {
+                    JOptionPane.showMessageDialog(null, "Please select 5 players!");
 
+                }
+            }
+        });
+
+        back = new JButton("Go Back");
         back.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -254,6 +707,23 @@ public class DraftingPage extends JFrame {
                 dispose();
             }
         });
+
+        teamLabel1.setBackground(new Color(102,102,153));
+        teamLabel2.setBackground(new Color(102,102,153));
+        teamLabel3.setBackground(new Color(102,102,153));
+        teamLabel4.setBackground(new Color(102,102,153));
+        teamLabel5.setBackground(new Color(102,102,153));
+        teamLabel6.setBackground(new Color(102,102,153));
+        teamLabel7.setBackground(new Color(102,102,153));
+        teamLabel8.setBackground(new Color(102,102,153));
+        teamLabel9.setBackground(new Color(102,102,153));
+        teamLabel10.setBackground(new Color(102,102,153));
+        teamLabel11.setBackground(new Color(102,102,153));
+        teamLabel12.setBackground(new Color(102,102,153));
+        teamLabel13.setBackground(new Color(102,102,153));
+        teamLabel14.setBackground(new Color(102,102,153));
+        teamLabel15.setBackground(new Color(102,102,153));
+        teamLabel16.setBackground(new Color(102,102,153));
 
         add (jcomp1);
         add (select);
@@ -273,27 +743,254 @@ public class DraftingPage extends JFrame {
         add (teamLabel14);
         add (teamLabel15);
         add (teamLabel16);
+        JButton teamButton1 = new JButton("View Team Players");
+        JButton teamButton2 = new JButton("View Team Players");
+        JButton teamButton3 = new JButton("View Team Players");
+        JButton teamButton4 = new JButton("View Team Players");
+        JButton teamButton5 = new JButton("View Team Players");
+        JButton teamButton6 = new JButton("View Team Players");
+        JButton teamButton7 = new JButton("View Team Players");
+        JButton teamButton8 = new JButton("View Team Players");
+        JButton teamButton9 = new JButton("View Team Players");
+        JButton teamButton10 = new JButton("View Team Players");
+        JButton teamButton11 = new JButton("View Team Players");
+        JButton teamButton12 = new JButton("View Team Players");
+        JButton teamButton13 = new JButton("View Team Players");
+        JButton teamButton14 = new JButton("View Team Players");
+        JButton teamButton15 = new JButton("View Team Players");
+        JButton teamButton16 = new JButton("View Team Players");
+        add(teamButton1);
+        add(teamButton2);
+        add(teamButton3);
+        add(teamButton4);
+        add(teamButton5);
+        add(teamButton6);
+        add(teamButton7);
+        add(teamButton8);
+        add(teamButton9);
+        add(teamButton10);
+        add(teamButton11);
+        add(teamButton12);
+        add(teamButton13);
+        add(teamButton14);
+        add(teamButton15);
+        add(teamButton16);
         add (startSeason);
         add(back);
 
+        teamButton1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                SwingUtilities.invokeLater(new Runnable() {
+                    @Override
+                    public void run() {
+                        new TeamViewPage(team1);
+                    }
+                });
+            }
+        });
+        teamButton2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                SwingUtilities.invokeLater(new Runnable() {
+                    @Override
+                    public void run() {
+                        new TeamViewPage(team2);
+                    }
+                });
+            }
+        });
+        teamButton3.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                SwingUtilities.invokeLater(new Runnable() {
+                    @Override
+                    public void run() {
+                        new TeamViewPage(team3);
+                    }
+                });
+            }
+        });
+        teamButton4.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                SwingUtilities.invokeLater(new Runnable() {
+                    @Override
+                    public void run() {
+                        new TeamViewPage(team4);
+                    }
+                });
+            }
+        });
+        teamButton5.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                SwingUtilities.invokeLater(new Runnable() {
+                    @Override
+                    public void run() {
+                        new TeamViewPage(team5);
+                    }
+                });
+            }
+        });
+        teamButton6.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                SwingUtilities.invokeLater(new Runnable() {
+                    @Override
+                    public void run() {
+                        new TeamViewPage(team6);
+                    }
+                });
+            }
+        });
+        teamButton7.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                SwingUtilities.invokeLater(new Runnable() {
+                    @Override
+                    public void run() {
+                        new TeamViewPage(team7);
+                    }
+                });
+            }
+        });
+        teamButton8.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                SwingUtilities.invokeLater(new Runnable() {
+                    @Override
+                    public void run() {
+                        new TeamViewPage(team8);
+                    }
+                });
+            }
+        });
+        teamButton9.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                SwingUtilities.invokeLater(new Runnable() {
+                    @Override
+                    public void run() {
+                        new TeamViewPage(team9);
+                    }
+                });
+            }
+        });
+        teamButton10.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                SwingUtilities.invokeLater(new Runnable() {
+                    @Override
+                    public void run() {
+                        new TeamViewPage(team10);
+                    }
+                });
+            }
+        });
+        teamButton11.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                SwingUtilities.invokeLater(new Runnable() {
+                    @Override
+                    public void run() {
+                        new TeamViewPage(team11);
+                    }
+                });
+            }
+        });
+        teamButton12.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                SwingUtilities.invokeLater(new Runnable() {
+                    @Override
+                    public void run() {
+                        new TeamViewPage(team12);
+                    }
+                });
+            }
+        });
+        teamButton13.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                SwingUtilities.invokeLater(new Runnable() {
+                    @Override
+                    public void run() {
+                        new TeamViewPage(team13);
+                    }
+                });
+            }
+        });
+        teamButton14.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                SwingUtilities.invokeLater(new Runnable() {
+                    @Override
+                    public void run() {
+                        new TeamViewPage(team14);
+                    }
+                });
+            }
+        });
+        teamButton15.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                SwingUtilities.invokeLater(new Runnable() {
+                    @Override
+                    public void run() {
+                        new TeamViewPage(team15);
+                    }
+                });
+            }
+        });
+        teamButton16.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                SwingUtilities.invokeLater(new Runnable() {
+                    @Override
+                    public void run() {
+                        new TeamViewPage(team16);
+                    }
+                });
+            }
+        });
+
+
+
         jcomp1.setBounds (65, 435, 625, 30);
         select.setBounds (715, 435, 130, 30);
-        teamLabel1.setBounds (65, 40, 200, 170);
-        teamLabel2.setBounds (275, 40, 200, 170);
-        teamLabel3.setBounds (485, 40, 200, 170);
-        teamLabel4.setBounds (695, 40, 200, 170);
-        teamLabel5.setBounds (905, 40, 200, 170);
-        teamLabel6.setBounds (1115, 40, 200, 170);
-        teamLabel7.setBounds (1325, 40, 200, 170);
-        teamLabel8.setBounds (1535, 40, 200, 170);
-        teamLabel9.setBounds (65, 240, 200, 170);
-        teamLabel10.setBounds (275, 240, 200, 170);
-        teamLabel11.setBounds (485, 240, 200, 170);
-        teamLabel12.setBounds (695, 240, 200, 170);
-        teamLabel13.setBounds (905, 240, 200, 170);
-        teamLabel14.setBounds (1115, 240, 200, 170);
-        teamLabel15.setBounds (1325, 240, 200, 170);
-        teamLabel16.setBounds (1535, 240, 200, 170);
+        teamLabel1.setBounds (65, 40, 200, 100);
+        teamButton1.setBounds(65,180,150,30);
+        teamLabel2.setBounds (275, 40, 200, 100);
+        teamButton2.setBounds(275,180,150,30);
+        teamLabel3.setBounds (485, 40, 200, 100);
+        teamButton3.setBounds(485,180,150,30);
+        teamLabel4.setBounds (695, 40, 200, 100);
+        teamButton4.setBounds(695,180,150,30);
+        teamLabel5.setBounds (905, 40, 200, 100);
+        teamButton5.setBounds(905,180,150,30);
+        teamLabel6.setBounds (1115, 40, 200, 100);
+        teamButton6.setBounds(1115,180,150,30);
+        teamLabel7.setBounds (1325, 40, 200, 100);
+        teamButton7.setBounds(1325,180,150,30);
+        teamLabel8.setBounds (1535, 40, 200, 100);
+        teamButton8.setBounds(1535,180,150,30);
+        teamLabel9.setBounds (65, 240, 200, 100);
+        teamButton9.setBounds(65,350,150,30);
+        teamLabel10.setBounds (275, 240, 200, 100);
+        teamButton10.setBounds(275,350,150,30);
+        teamLabel11.setBounds (485, 240, 200, 100);
+        teamButton11.setBounds(485,350,150,30);
+        teamLabel12.setBounds (695, 240, 200, 100);
+        teamButton12.setBounds(695,350,150,30);
+        teamLabel13.setBounds (905, 240, 200, 100);
+        teamButton13.setBounds(905,350,150,30);
+        teamLabel14.setBounds (1115, 240, 200, 100);
+        teamButton14.setBounds(1115,350,150,30);
+        teamLabel15.setBounds (1325, 240, 200, 100);
+        teamButton15.setBounds(1325,350,150,30);
+        teamLabel16.setBounds (1535, 240, 200, 100);
+        teamButton16.setBounds(1535,350,150,30);
         startSeason.setBounds (865, 435, 230, 30);
         back.setBounds(65,500,130,30);
     }

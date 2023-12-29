@@ -16,7 +16,9 @@ public class StartPage extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         JButton signUp = new JButton("Sign Up");
-        signUp.setPreferredSize(new Dimension(400,110));
+        signUp.setPreferredSize(new Dimension(200,90));
+        signUp.setFont(new Font("Ariel", Font.PLAIN, 16));
+        signUp.setBackground(new Color(184,184,184));
         signUp.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -30,8 +32,15 @@ public class StartPage extends JFrame {
             }
         });
 
+        JLabel margin = new JLabel("");
+        margin.setPreferredSize(new Dimension(200, 90));
+        JLabel margin2 = new JLabel("");
+        margin2.setPreferredSize(new Dimension(1000, 20));
+
         JButton logIn = new JButton("Log In");
-        logIn.setPreferredSize(new Dimension(400,110));
+        logIn.setFont(new Font("Ariel", Font.PLAIN, 16));
+        logIn.setPreferredSize(new Dimension(200,90));
+        logIn.setBackground(new Color(184,184,184));
         logIn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -47,7 +56,9 @@ public class StartPage extends JFrame {
 
         setLayout(new FlowLayout());
         add(picture);
+        add(margin2);
         add(signUp);
+        add(margin);
         add(logIn);
         setVisible(true);
     }

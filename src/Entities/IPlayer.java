@@ -71,4 +71,90 @@ public class IPlayer implements IEntity {
     public void setPosition(String position) {
         this.position = position;
     }
+
+    public double getWeightedPts(){
+        double weight = 0;
+        switch (getPosition()) {
+            case "C", "SF":
+                weight =  0.2;
+                break;
+            case "PF", "PG":
+                weight = 0.3;
+                break;
+            case "SG":
+                weight = 0.4;
+                break;
+        }
+
+        return weight;
+    }
+
+    public double getWeightedTrb(){
+        double weight = 0;
+        switch (getPosition()) {
+            case "C", "PF":
+                weight =  0.3;
+                break;
+            case "PG", "SG":
+                weight = 0.1;
+                break;
+            case "SF":
+                weight = 0.2;
+                break;
+        }
+
+        return weight;
+    }
+
+    public double getWeightedAst(){
+        double weight = 0;
+        switch (getPosition()) {
+            case "C":
+                break;
+            case "PF":
+                weight = 0.1;
+                break;
+            case "PG":
+                weight = 0.4;
+                break;
+            case "SF":
+                weight = 0.15;
+                break;
+            case "SG":
+                weight = 0.3;
+        }
+
+        return weight;
+    }
+
+    public double getWeightedBlk(){
+        double weight = 0;
+        switch (getPosition()) {
+            case "C":
+                weight = 0.4;
+                break;
+            case "PF", "SF":
+                weight = 0.2;
+                break;
+            case "PG", "SG":
+                weight = 0.1;
+                break;
+        }
+
+        return weight;
+    }
+
+    public double getWeightedStl(){
+        double weight = 0;
+        switch (getPosition()) {
+            case "C", "PF", "PG", "SG":
+                weight = 0.1;
+                break;
+            case "SF":
+                weight = 0.25;
+                break;
+        }
+
+        return weight;
+    }
 }
