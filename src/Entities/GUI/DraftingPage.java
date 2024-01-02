@@ -4,11 +4,14 @@ import Entities.IPlayer;
 import Entities.Players.*;
 import Entities.Team;
 import Entities.User;
+import Exceptions.*;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.image.BufferedImage;
 import java.io.*;
 import java.util.*;
 
@@ -58,15 +61,13 @@ public class DraftingPage extends JFrame {
     Set<String> playerNames = new TreeSet<>();
     ArrayList<Team> teams = new ArrayList<>();
     private int number = 0;
-    public DraftingPage(User user) throws IOException {
+    public DraftingPage(User user) throws IOException, InvalidAgeException, InvalidNameException, AlreadyExistsException, InvalidPasswordException, InvalidUsernameException, InvalidEmailException {
 
-        String[] jcomp1Items = {"Item 1", "Item 2", "Item 3"};
         setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
-
         setSize (new Dimension(1980, 600));
         setLayout (null);
-
         setVisible(true);
+        setTitle("Choose Your Players!");
         String line;
         String[] player;
         ArrayList<IPlayer> players = new ArrayList<>();
@@ -75,39 +76,97 @@ public class DraftingPage extends JFrame {
         ArrayList<IPlayer> PG_players = new ArrayList<>();
         ArrayList<IPlayer> SF_players = new ArrayList<>();
         ArrayList<IPlayer> SG_players = new ArrayList<>();
+
+        ArrayList<String[]> data = new ArrayList<>();
+        Scanner reader = new Scanner(new File("src\\Logs\\users.txt"));
+        while(reader.hasNext()){
+            data.add(reader.nextLine().split(";"));
+        }
+        for (int i = 0; i < data.size(); i++) {
+            if (data.get(i)[0].equals(user.getNickname())) {
+                user = new User(data.get(i)[0],data.get(i)[1],data.get(i)[2],data.get(i)[3],data.get(i)[4],Integer.parseInt(data.get(i)[5]),data.get(i)[6]);
+            }
+        }
+
         Team team1 = new Team(user.getName() + "'s Team", null);
         team1String += user.getName() + "'s Team \n";
+        BufferedImage originalTeam1 = ImageIO.read(new File(user.getImagePath()));
+        ImageIcon imageTeam1 = new ImageIcon(originalTeam1.getScaledInstance(100,100, Image.SCALE_SMOOTH));
+
         Team team2 = new Team("Boston KUltics", null);
         team2String += team2.getName() + "\n";
+        BufferedImage originalTeam2 = ImageIO.read(new File("src\\Pictures\\TeamLogos\\BostonCeltics.png"));
+        ImageIcon imageTeam2 = new ImageIcon(originalTeam2.getScaledInstance(100,100 , Image.SCALE_SMOOTH));
+
         Team team3 = new Team("ChicaKU Bulls", null);
         team3String += team3.getName() + "\n";
+        BufferedImage originalTeam3 = ImageIO.read(new File("src\\Pictures\\TeamLogos\\ChicagoBulls.png"));
+        ImageIcon imageTeam3 = new ImageIcon(originalTeam3.getScaledInstance(100,100 , Image.SCALE_SMOOTH));
+
         Team team4 = new Team("Golden KU Warriors", null);
         team4String += team4.getName() + "\n";
+        BufferedImage originalTeam4 = ImageIO.read(new File("src\\Pictures\\TeamLogos\\GoldenStateWarriors.png"));
+        ImageIcon imageTeam4 = new ImageIcon(originalTeam4.getScaledInstance(100,100 , Image.SCALE_SMOOTH));
+
         Team team5 = new Team("MiaKU Heats", null);
         team5String += team5.getName() + "\n";
+        BufferedImage originalTeam5 = ImageIO.read(new File("src\\Pictures\\TeamLogos\\MiamiHeat.png"));
+        ImageIcon imageTeam5 = new ImageIcon(originalTeam5.getScaledInstance(100,100 , Image.SCALE_SMOOTH));
+
         Team team6 = new Team("Toronto RaptorKUs", null);
         team6String += team6.getName() + "\n";
+        BufferedImage originalTeam6 = ImageIO.read(new File("src\\Pictures\\TeamLogos\\TorontoRaptors.png"));
+        ImageIcon imageTeam6 = new ImageIcon(originalTeam6.getScaledInstance(100,100 , Image.SCALE_SMOOTH));
+
         Team team7 = new Team("KUladelphia 76ers", null);
         team7String += team7.getName() + "\n";
+        BufferedImage originalTeam7 = ImageIO.read(new File("src\\Pictures\\TeamLogos\\Philadelphia76ers.png"));
+        ImageIcon imageTeam7 = new ImageIcon(originalTeam7.getScaledInstance(100,100 , Image.SCALE_SMOOTH));
+
         Team team8 = new Team("WasKUngton Wizards", null);
         team8String = team8.getName() + "\n";
+        BufferedImage originalTeam8 = ImageIO.read(new File("src\\Pictures\\TeamLogos\\WashingtonWizards.png"));
+        ImageIcon imageTeam8 = new ImageIcon(originalTeam8.getScaledInstance(100,100 , Image.SCALE_SMOOTH));
+
         Team team9 = new Team("KUleveland Cavaliers", null);
         team9String += team9.getName() + "\n";
+        BufferedImage originalTeam9 = ImageIO.read(new File("src\\Pictures\\TeamLogos\\ClevelandCavaliers.png"));
+        ImageIcon imageTeam9 = new ImageIcon(originalTeam9.getScaledInstance(100,100 , Image.SCALE_SMOOTH));
+
         Team team10 = new Team("Houston RocKUts", null);
         team10String += team10.getName() + "\n";
+        BufferedImage originalTeam10 = ImageIO.read(new File("src\\Pictures\\TeamLogos\\HoustonRockets.png"));
+        ImageIcon imageTeam10 = new ImageIcon(originalTeam10.getScaledInstance(100,100 , Image.SCALE_SMOOTH));
+
         Team team11 = new Team("Atlanta HawKU", null);
         team11String += team11.getName() + "\n";
+        BufferedImage originalTeam11 = ImageIO.read(new File("src\\Pictures\\TeamLogos\\AtlantaHawks.png"));
+        ImageIcon imageTeam11 = new ImageIcon(originalTeam11.getScaledInstance(100,100 , Image.SCALE_SMOOTH));
+
         Team team12 = new Team("KUharlotte Hornets", null);
         team12String += team12.getName() + "\n";
+        BufferedImage originalTeam12 = ImageIO.read(new File("src\\Pictures\\TeamLogos\\CharlotteHornets.png"));
+        ImageIcon imageTeam12 = new ImageIcon(originalTeam12.getScaledInstance(100,100 , Image.SCALE_SMOOTH));
+
         Team team13 = new Team("New Orleans PeliKUns", null);
         team13String += team13.getName() + "\n";
+        BufferedImage originalTeam13 = ImageIO.read(new File("src\\Pictures\\TeamLogos\\NewOrleansPelicans.png"));
+        ImageIcon imageTeam13 = new ImageIcon(originalTeam13.getScaledInstance(100,100 , Image.SCALE_SMOOTH));
+
         Team team14 = new Team("KU Antonio Spurs", null);
         team14String += team14.getName() + "\n";
+        BufferedImage originalTeam14 = ImageIO.read(new File("src\\Pictures\\TeamLogos\\SanAntonioSpurs.png"));
+        ImageIcon imageTeam14 = new ImageIcon(originalTeam14.getScaledInstance(100,100 , Image.SCALE_SMOOTH));
+
         Team team15 = new Team("Minnesota TimberKUs", null);
         team15String += team15.getName() + "\n";
+        BufferedImage originalTeam15 = ImageIO.read(new File("src\\Pictures\\TeamLogos\\MinnesotaTimberwolves.png"));
+        ImageIcon imageTeam15 = new ImageIcon(originalTeam15.getScaledInstance(100,100 , Image.SCALE_SMOOTH));
+
         Team team16 = new Team("Memphis KUrizzlies", null);
         team16String += team16.getName() + "\n";
-
+        BufferedImage originalTeam16 = ImageIO.read(new File("src\\Pictures\\TeamLogos\\MemphisGrizzlies.png"));
+        ImageIcon imageTeam16 = new ImageIcon(originalTeam16.getScaledInstance(100,100 , Image.SCALE_SMOOTH));
 
         BufferedReader fileReader = new BufferedReader(new FileReader("src\\Logs\\2022-2023-NBA-Player-Stats-Regular.csv"));
         while ((line = fileReader.readLine()) != null) {
@@ -155,37 +214,37 @@ public class DraftingPage extends JFrame {
 
         jcomp1 = new JComboBox (playerNames.toArray());
         jcomp1.setRenderer(new CustomCellRenderer());
-        teamLabel1 = new JLabel (team1String);
+        teamLabel1 = new JLabel (imageTeam1);
         teamLabel1.setFont(new Font("Ariel", Font.PLAIN, 16));
-        teamLabel2 = new JLabel (team2String);
+        teamLabel2 = new JLabel (imageTeam2);
         teamLabel2.setFont(new Font("Ariel", Font.PLAIN, 16));
-        teamLabel3 = new JLabel (team3String);
+        teamLabel3 = new JLabel (imageTeam3);
         teamLabel3.setFont(new Font("Ariel", Font.PLAIN, 16));
-        teamLabel4 = new JLabel (team4String);
+        teamLabel4 = new JLabel (imageTeam4);
         teamLabel4.setFont(new Font("Ariel", Font.PLAIN, 16));
-        teamLabel5 = new JLabel (team5String);
+        teamLabel5 = new JLabel (imageTeam5);
         teamLabel5.setFont(new Font("Ariel", Font.PLAIN, 16));
-        teamLabel6 = new JLabel (team6String);
+        teamLabel6 = new JLabel (imageTeam6);
         teamLabel6.setFont(new Font("Ariel", Font.PLAIN, 16));
-        teamLabel7 = new JLabel (team7String);
+        teamLabel7 = new JLabel (imageTeam7);
         teamLabel7.setFont(new Font("Ariel", Font.PLAIN, 16));
-        teamLabel8 = new JLabel (team8String);
+        teamLabel8 = new JLabel (imageTeam8);
         teamLabel8.setFont(new Font("Ariel", Font.PLAIN, 16));
-        teamLabel9 = new JLabel (team9String);
+        teamLabel9 = new JLabel (imageTeam9);
         teamLabel9.setFont(new Font("Ariel", Font.PLAIN, 16));
-        teamLabel10 = new JLabel (team10String);
+        teamLabel10 = new JLabel (imageTeam10);
         teamLabel10.setFont(new Font("Ariel", Font.PLAIN, 16));
-        teamLabel11 = new JLabel (team11String);
+        teamLabel11 = new JLabel (imageTeam11);
         teamLabel11.setFont(new Font("Ariel", Font.PLAIN, 16));
-        teamLabel12 = new JLabel (team12String);
+        teamLabel12 = new JLabel (imageTeam12);
         teamLabel12.setFont(new Font("Ariel", Font.PLAIN, 16));
-        teamLabel13 = new JLabel (team13String);
+        teamLabel13 = new JLabel (imageTeam13);
         teamLabel13.setFont(new Font("Ariel", Font.PLAIN, 16));
-        teamLabel14 = new JLabel (team14String);
+        teamLabel14 = new JLabel (imageTeam14);
         teamLabel14.setFont(new Font("Ariel", Font.PLAIN, 16));
-        teamLabel15 = new JLabel (team15String);
+        teamLabel15 = new JLabel (imageTeam15);
         teamLabel15.setFont(new Font("Ariel", Font.PLAIN, 16));
-        teamLabel16 = new JLabel (team16String);
+        teamLabel16 = new JLabel (imageTeam16);
         teamLabel16.setFont(new Font("Ariel", Font.PLAIN, 16));
         select = new JButton ("Select Player");
         select.setFont(new Font("Ariel", Font.PLAIN, 16));
@@ -704,6 +763,7 @@ public class DraftingPage extends JFrame {
                         }
                     });
                     dispose();
+                    log(teams);
                 } else {
                     JOptionPane.showMessageDialog(null, "Please select 5 players!");
 
@@ -714,6 +774,7 @@ public class DraftingPage extends JFrame {
         back = new JButton("Go Back");
         back.setFont(new Font("Ariel", Font.PLAIN, 16));
         back.setBackground(new Color(184,184,184));
+        User finalUser = user;
         back.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -721,7 +782,7 @@ public class DraftingPage extends JFrame {
                     @Override
                     public void run() {
                         try {
-                            new MainPage(user);
+                            new MainPage(finalUser);
                         } catch (IOException e) {
                             throw new RuntimeException(e);
                         }
@@ -730,23 +791,6 @@ public class DraftingPage extends JFrame {
                 dispose();
             }
         });
-
-        teamLabel1.setForeground(new Color(102,102,153));
-        teamLabel2.setForeground(new Color(102,102,153));
-        teamLabel3.setForeground(new Color(102,102,153));
-        teamLabel4.setForeground(new Color(102,102,153));
-        teamLabel5.setForeground(new Color(102,102,153));
-        teamLabel6.setForeground(new Color(102,102,153));
-        teamLabel7.setForeground(new Color(102,102,153));
-        teamLabel8.setForeground(new Color(102,102,153));
-        teamLabel9.setForeground(new Color(102,102,153));
-        teamLabel10.setForeground(new Color(102,102,153));
-        teamLabel11.setForeground(new Color(102,102,153));
-        teamLabel12.setForeground(new Color(102,102,153));
-        teamLabel13.setForeground(new Color(102,102,153));
-        teamLabel14.setForeground(new Color(102,102,153));
-        teamLabel15.setForeground(new Color(102,102,153));
-        teamLabel16.setForeground(new Color(102,102,153));
 
         add (jcomp1);
         add (select);
@@ -1014,40 +1058,67 @@ public class DraftingPage extends JFrame {
 
         jcomp1.setBounds (65, 435, 625, 30);
         select.setBounds (715, 435, 130, 30);
-        teamLabel1.setBounds (65, 40, 200, 100);
+        teamLabel1.setBounds (45, 40, 200, 100);
         teamButton1.setBounds(65,180,150,30);
-        teamLabel2.setBounds (275, 40, 200, 100);
+        teamLabel2.setBounds (255, 40, 200, 100);
         teamButton2.setBounds(275,180,150,30);
-        teamLabel3.setBounds (485, 40, 200, 100);
+        teamLabel3.setBounds (465, 40, 200, 100);
         teamButton3.setBounds(485,180,150,30);
-        teamLabel4.setBounds (695, 40, 200, 100);
+        teamLabel4.setBounds (675, 40, 200, 100);
         teamButton4.setBounds(695,180,150,30);
-        teamLabel5.setBounds (905, 40, 200, 100);
+        teamLabel5.setBounds (885, 40, 200, 100);
         teamButton5.setBounds(905,180,150,30);
-        teamLabel6.setBounds (1115, 40, 200, 100);
+        teamLabel6.setBounds (1095, 40, 200, 100);
         teamButton6.setBounds(1115,180,150,30);
-        teamLabel7.setBounds (1325, 40, 200, 100);
+        teamLabel7.setBounds (1305, 40, 200, 100);
         teamButton7.setBounds(1325,180,150,30);
-        teamLabel8.setBounds (1535, 40, 200, 100);
+        teamLabel8.setBounds (1515, 40, 200, 100);
         teamButton8.setBounds(1535,180,150,30);
-        teamLabel9.setBounds (65, 240, 200, 100);
+        teamLabel9.setBounds (45, 240, 200, 100);
         teamButton9.setBounds(65,350,150,30);
-        teamLabel10.setBounds (275, 240, 200, 100);
+        teamLabel10.setBounds (255, 240, 200, 100);
         teamButton10.setBounds(275,350,150,30);
-        teamLabel11.setBounds (485, 240, 200, 100);
+        teamLabel11.setBounds (465, 240, 200, 100);
         teamButton11.setBounds(485,350,150,30);
-        teamLabel12.setBounds (695, 240, 200, 100);
+        teamLabel12.setBounds (675, 240, 200, 100);
         teamButton12.setBounds(695,350,150,30);
-        teamLabel13.setBounds (905, 240, 200, 100);
+        teamLabel13.setBounds (885, 240, 200, 100);
         teamButton13.setBounds(905,350,150,30);
-        teamLabel14.setBounds (1115, 240, 200, 100);
+        teamLabel14.setBounds (1095, 240, 200, 100);
         teamButton14.setBounds(1115,350,150,30);
-        teamLabel15.setBounds (1325, 240, 200, 100);
+        teamLabel15.setBounds (1305, 240, 200, 100);
         teamButton15.setBounds(1325,350,150,30);
-        teamLabel16.setBounds (1535, 240, 200, 100);
+        teamLabel16.setBounds (1515, 240, 200, 100);
         teamButton16.setBounds(1535,350,150,30);
         startSeason.setBounds (865, 435, 230, 30);
         back.setBounds(65,500,130,30);
+    }
+
+    private void log(ArrayList<Team> teams){
+        String log = "";
+        for (Team team: teams) {
+            log += team.getName() + ";";
+            for (IPlayer player: team.getTeamPlayers()){
+                log += player.getName() + ";" + player.getPosition() + ";" + player.getPts() + ";" + player.getWeightedPts() + ";" + player.getTrb() + ";" + player.getWeightedTrb() +
+                       ";" + player.getAst() + ";" + player.getWeightedAst() + ";" + player.getBlk() + ";" + player.getWeightedBlk() + ";" + player.getStl() + ";" + player.getWeightedStl() + ";";
+            }
+            log += "\n";
+        }
+
+        FileWriter fileWriter;
+        try {
+            fileWriter = new FileWriter(new File("src\\Logs\\DraftResults.txt"));
+        } catch (IOException ex) {
+            throw new RuntimeException(ex);
+        }
+
+        BufferedWriter writer = new BufferedWriter(fileWriter);
+        try {
+            writer.write(log);
+            writer.close();
+        } catch (IOException ex) {
+            throw new RuntimeException(ex);
+        }
     }
 
 }

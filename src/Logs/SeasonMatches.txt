@@ -1,0 +1,240 @@
+Match #1- Home: Kerem Burak's Team Away: Boston KUltics, Winner: Kerem Burak's Team
+Match #2- Home: Boston KUltics Away: Kerem Burak's Team, Winner: Boston KUltics
+Match #3- Home: Kerem Burak's Team Away: ChicaKU Bulls, Winner: ChicaKU Bulls
+Match #4- Home: ChicaKU Bulls Away: Kerem Burak's Team, Winner: ChicaKU Bulls
+Match #5- Home: Kerem Burak's Team Away: Golden KU Warriors, Winner: Kerem Burak's Team
+Match #6- Home: Golden KU Warriors Away: Kerem Burak's Team, Winner: Kerem Burak's Team
+Match #7- Home: Kerem Burak's Team Away: MiaKU Heats, Winner: MiaKU Heats
+Match #8- Home: MiaKU Heats Away: Kerem Burak's Team, Winner: MiaKU Heats
+Match #9- Home: Kerem Burak's Team Away: Toronto RaptorKUs, Winner: Kerem Burak's Team
+Match #10- Home: Toronto RaptorKUs Away: Kerem Burak's Team, Winner: Toronto RaptorKUs
+Match #11- Home: Kerem Burak's Team Away: KUladelphia 76ers, Winner: Kerem Burak's Team
+Match #12- Home: KUladelphia 76ers Away: Kerem Burak's Team, Winner: Kerem Burak's Team
+Match #13- Home: Kerem Burak's Team Away: WasKUngton Wizards, Winner: Kerem Burak's Team
+Match #14- Home: WasKUngton Wizards Away: Kerem Burak's Team, Winner: Kerem Burak's Team
+Match #15- Home: Kerem Burak's Team Away: KUleveland Cavaliers, Winner: Kerem Burak's Team
+Match #16- Home: KUleveland Cavaliers Away: Kerem Burak's Team, Winner: Kerem Burak's Team
+Match #17- Home: Kerem Burak's Team Away: Houston RocKUts, Winner: Kerem Burak's Team
+Match #18- Home: Houston RocKUts Away: Kerem Burak's Team, Winner: Kerem Burak's Team
+Match #19- Home: Kerem Burak's Team Away: Atlanta HawKU, Winner: Atlanta HawKU
+Match #20- Home: Atlanta HawKU Away: Kerem Burak's Team, Winner: Atlanta HawKU
+Match #21- Home: Kerem Burak's Team Away: KUharlotte Hornets, Winner: Kerem Burak's Team
+Match #22- Home: KUharlotte Hornets Away: Kerem Burak's Team, Winner: Kerem Burak's Team
+Match #23- Home: Kerem Burak's Team Away: New Orleans PeliKUns, Winner: Kerem Burak's Team
+Match #24- Home: New Orleans PeliKUns Away: Kerem Burak's Team, Winner: Kerem Burak's Team
+Match #25- Home: Kerem Burak's Team Away: KU Antonio Spurs, Winner: KU Antonio Spurs
+Match #26- Home: KU Antonio Spurs Away: Kerem Burak's Team, Winner: KU Antonio Spurs
+Match #27- Home: Kerem Burak's Team Away: Minnesota TimberKUs, Winner: Kerem Burak's Team
+Match #28- Home: Minnesota TimberKUs Away: Kerem Burak's Team, Winner: Kerem Burak's Team
+Match #29- Home: Kerem Burak's Team Away: Memphis KUrizzlies, Winner: Memphis KUrizzlies
+Match #30- Home: Memphis KUrizzlies Away: Kerem Burak's Team, Winner: Memphis KUrizzlies
+Match #31- Home: Boston KUltics Away: ChicaKU Bulls, Winner: ChicaKU Bulls
+Match #32- Home: ChicaKU Bulls Away: Boston KUltics, Winner: ChicaKU Bulls
+Match #33- Home: Boston KUltics Away: Golden KU Warriors, Winner: Boston KUltics
+Match #34- Home: Golden KU Warriors Away: Boston KUltics, Winner: Boston KUltics
+Match #35- Home: Boston KUltics Away: MiaKU Heats, Winner: MiaKU Heats
+Match #36- Home: MiaKU Heats Away: Boston KUltics, Winner: MiaKU Heats
+Match #37- Home: Boston KUltics Away: Toronto RaptorKUs, Winner: Toronto RaptorKUs
+Match #38- Home: Toronto RaptorKUs Away: Boston KUltics, Winner: Toronto RaptorKUs
+Match #39- Home: Boston KUltics Away: KUladelphia 76ers, Winner: Boston KUltics
+Match #40- Home: KUladelphia 76ers Away: Boston KUltics, Winner: Boston KUltics
+Match #41- Home: Boston KUltics Away: WasKUngton Wizards, Winner: Boston KUltics
+Match #42- Home: WasKUngton Wizards Away: Boston KUltics, Winner: WasKUngton Wizards
+Match #43- Home: Boston KUltics Away: KUleveland Cavaliers, Winner: Boston KUltics
+Match #44- Home: KUleveland Cavaliers Away: Boston KUltics, Winner: Boston KUltics
+Match #45- Home: Boston KUltics Away: Houston RocKUts, Winner: Boston KUltics
+Match #46- Home: Houston RocKUts Away: Boston KUltics, Winner: Boston KUltics
+Match #47- Home: Boston KUltics Away: Atlanta HawKU, Winner: Atlanta HawKU
+Match #48- Home: Atlanta HawKU Away: Boston KUltics, Winner: Atlanta HawKU
+Match #49- Home: Boston KUltics Away: KUharlotte Hornets, Winner: Boston KUltics
+Match #50- Home: KUharlotte Hornets Away: Boston KUltics, Winner: Boston KUltics
+Match #51- Home: Boston KUltics Away: New Orleans PeliKUns, Winner: Boston KUltics
+Match #52- Home: New Orleans PeliKUns Away: Boston KUltics, Winner: Boston KUltics
+Match #53- Home: Boston KUltics Away: KU Antonio Spurs, Winner: KU Antonio Spurs
+Match #54- Home: KU Antonio Spurs Away: Boston KUltics, Winner: KU Antonio Spurs
+Match #55- Home: Boston KUltics Away: Minnesota TimberKUs, Winner: Boston KUltics
+Match #56- Home: Minnesota TimberKUs Away: Boston KUltics, Winner: Boston KUltics
+Match #57- Home: Boston KUltics Away: Memphis KUrizzlies, Winner: Memphis KUrizzlies
+Match #58- Home: Memphis KUrizzlies Away: Boston KUltics, Winner: Memphis KUrizzlies
+Match #59- Home: ChicaKU Bulls Away: Golden KU Warriors, Winner: ChicaKU Bulls
+Match #60- Home: Golden KU Warriors Away: ChicaKU Bulls, Winner: ChicaKU Bulls
+Match #61- Home: ChicaKU Bulls Away: MiaKU Heats, Winner: MiaKU Heats
+Match #62- Home: MiaKU Heats Away: ChicaKU Bulls, Winner: MiaKU Heats
+Match #63- Home: ChicaKU Bulls Away: Toronto RaptorKUs, Winner: ChicaKU Bulls
+Match #64- Home: Toronto RaptorKUs Away: ChicaKU Bulls, Winner: ChicaKU Bulls
+Match #65- Home: ChicaKU Bulls Away: KUladelphia 76ers, Winner: ChicaKU Bulls
+Match #66- Home: KUladelphia 76ers Away: ChicaKU Bulls, Winner: ChicaKU Bulls
+Match #67- Home: ChicaKU Bulls Away: WasKUngton Wizards, Winner: ChicaKU Bulls
+Match #68- Home: WasKUngton Wizards Away: ChicaKU Bulls, Winner: ChicaKU Bulls
+Match #69- Home: ChicaKU Bulls Away: KUleveland Cavaliers, Winner: ChicaKU Bulls
+Match #70- Home: KUleveland Cavaliers Away: ChicaKU Bulls, Winner: ChicaKU Bulls
+Match #71- Home: ChicaKU Bulls Away: Houston RocKUts, Winner: ChicaKU Bulls
+Match #72- Home: Houston RocKUts Away: ChicaKU Bulls, Winner: ChicaKU Bulls
+Match #73- Home: ChicaKU Bulls Away: Atlanta HawKU, Winner: Atlanta HawKU
+Match #74- Home: Atlanta HawKU Away: ChicaKU Bulls, Winner: Atlanta HawKU
+Match #75- Home: ChicaKU Bulls Away: KUharlotte Hornets, Winner: ChicaKU Bulls
+Match #76- Home: KUharlotte Hornets Away: ChicaKU Bulls, Winner: ChicaKU Bulls
+Match #77- Home: ChicaKU Bulls Away: New Orleans PeliKUns, Winner: ChicaKU Bulls
+Match #78- Home: New Orleans PeliKUns Away: ChicaKU Bulls, Winner: ChicaKU Bulls
+Match #79- Home: ChicaKU Bulls Away: KU Antonio Spurs, Winner: ChicaKU Bulls
+Match #80- Home: KU Antonio Spurs Away: ChicaKU Bulls, Winner: ChicaKU Bulls
+Match #81- Home: ChicaKU Bulls Away: Minnesota TimberKUs, Winner: ChicaKU Bulls
+Match #82- Home: Minnesota TimberKUs Away: ChicaKU Bulls, Winner: ChicaKU Bulls
+Match #83- Home: ChicaKU Bulls Away: Memphis KUrizzlies, Winner: ChicaKU Bulls
+Match #84- Home: Memphis KUrizzlies Away: ChicaKU Bulls, Winner: ChicaKU Bulls
+Match #85- Home: Golden KU Warriors Away: MiaKU Heats, Winner: MiaKU Heats
+Match #86- Home: MiaKU Heats Away: Golden KU Warriors, Winner: MiaKU Heats
+Match #87- Home: Golden KU Warriors Away: Toronto RaptorKUs, Winner: Toronto RaptorKUs
+Match #88- Home: Toronto RaptorKUs Away: Golden KU Warriors, Winner: Toronto RaptorKUs
+Match #89- Home: Golden KU Warriors Away: KUladelphia 76ers, Winner: Golden KU Warriors
+Match #90- Home: KUladelphia 76ers Away: Golden KU Warriors, Winner: Golden KU Warriors
+Match #91- Home: Golden KU Warriors Away: WasKUngton Wizards, Winner: Golden KU Warriors
+Match #92- Home: WasKUngton Wizards Away: Golden KU Warriors, Winner: WasKUngton Wizards
+Match #93- Home: Golden KU Warriors Away: KUleveland Cavaliers, Winner: Golden KU Warriors
+Match #94- Home: KUleveland Cavaliers Away: Golden KU Warriors, Winner: Golden KU Warriors
+Match #95- Home: Golden KU Warriors Away: Houston RocKUts, Winner: Golden KU Warriors
+Match #96- Home: Houston RocKUts Away: Golden KU Warriors, Winner: Golden KU Warriors
+Match #97- Home: Golden KU Warriors Away: Atlanta HawKU, Winner: Atlanta HawKU
+Match #98- Home: Atlanta HawKU Away: Golden KU Warriors, Winner: Atlanta HawKU
+Match #99- Home: Golden KU Warriors Away: KUharlotte Hornets, Winner: Golden KU Warriors
+Match #100- Home: KUharlotte Hornets Away: Golden KU Warriors, Winner: Golden KU Warriors
+Match #101- Home: Golden KU Warriors Away: New Orleans PeliKUns, Winner: Golden KU Warriors
+Match #102- Home: New Orleans PeliKUns Away: Golden KU Warriors, Winner: Golden KU Warriors
+Match #103- Home: Golden KU Warriors Away: KU Antonio Spurs, Winner: KU Antonio Spurs
+Match #104- Home: KU Antonio Spurs Away: Golden KU Warriors, Winner: KU Antonio Spurs
+Match #105- Home: Golden KU Warriors Away: Minnesota TimberKUs, Winner: Golden KU Warriors
+Match #106- Home: Minnesota TimberKUs Away: Golden KU Warriors, Winner: Golden KU Warriors
+Match #107- Home: Golden KU Warriors Away: Memphis KUrizzlies, Winner: Memphis KUrizzlies
+Match #108- Home: Memphis KUrizzlies Away: Golden KU Warriors, Winner: Memphis KUrizzlies
+Match #109- Home: MiaKU Heats Away: Toronto RaptorKUs, Winner: MiaKU Heats
+Match #110- Home: Toronto RaptorKUs Away: MiaKU Heats, Winner: MiaKU Heats
+Match #111- Home: MiaKU Heats Away: KUladelphia 76ers, Winner: MiaKU Heats
+Match #112- Home: KUladelphia 76ers Away: MiaKU Heats, Winner: MiaKU Heats
+Match #113- Home: MiaKU Heats Away: WasKUngton Wizards, Winner: MiaKU Heats
+Match #114- Home: WasKUngton Wizards Away: MiaKU Heats, Winner: MiaKU Heats
+Match #115- Home: MiaKU Heats Away: KUleveland Cavaliers, Winner: MiaKU Heats
+Match #116- Home: KUleveland Cavaliers Away: MiaKU Heats, Winner: MiaKU Heats
+Match #117- Home: MiaKU Heats Away: Houston RocKUts, Winner: MiaKU Heats
+Match #118- Home: Houston RocKUts Away: MiaKU Heats, Winner: MiaKU Heats
+Match #119- Home: MiaKU Heats Away: Atlanta HawKU, Winner: Atlanta HawKU
+Match #120- Home: Atlanta HawKU Away: MiaKU Heats, Winner: Atlanta HawKU
+Match #121- Home: MiaKU Heats Away: KUharlotte Hornets, Winner: MiaKU Heats
+Match #122- Home: KUharlotte Hornets Away: MiaKU Heats, Winner: MiaKU Heats
+Match #123- Home: MiaKU Heats Away: New Orleans PeliKUns, Winner: MiaKU Heats
+Match #124- Home: New Orleans PeliKUns Away: MiaKU Heats, Winner: MiaKU Heats
+Match #125- Home: MiaKU Heats Away: KU Antonio Spurs, Winner: MiaKU Heats
+Match #126- Home: KU Antonio Spurs Away: MiaKU Heats, Winner: MiaKU Heats
+Match #127- Home: MiaKU Heats Away: Minnesota TimberKUs, Winner: MiaKU Heats
+Match #128- Home: Minnesota TimberKUs Away: MiaKU Heats, Winner: MiaKU Heats
+Match #129- Home: MiaKU Heats Away: Memphis KUrizzlies, Winner: MiaKU Heats
+Match #130- Home: Memphis KUrizzlies Away: MiaKU Heats, Winner: MiaKU Heats
+Match #131- Home: Toronto RaptorKUs Away: KUladelphia 76ers, Winner: Toronto RaptorKUs
+Match #132- Home: KUladelphia 76ers Away: Toronto RaptorKUs, Winner: Toronto RaptorKUs
+Match #133- Home: Toronto RaptorKUs Away: WasKUngton Wizards, Winner: Toronto RaptorKUs
+Match #134- Home: WasKUngton Wizards Away: Toronto RaptorKUs, Winner: Toronto RaptorKUs
+Match #135- Home: Toronto RaptorKUs Away: KUleveland Cavaliers, Winner: Toronto RaptorKUs
+Match #136- Home: KUleveland Cavaliers Away: Toronto RaptorKUs, Winner: Toronto RaptorKUs
+Match #137- Home: Toronto RaptorKUs Away: Houston RocKUts, Winner: Toronto RaptorKUs
+Match #138- Home: Houston RocKUts Away: Toronto RaptorKUs, Winner: Toronto RaptorKUs
+Match #139- Home: Toronto RaptorKUs Away: Atlanta HawKU, Winner: Atlanta HawKU
+Match #140- Home: Atlanta HawKU Away: Toronto RaptorKUs, Winner: Atlanta HawKU
+Match #141- Home: Toronto RaptorKUs Away: KUharlotte Hornets, Winner: Toronto RaptorKUs
+Match #142- Home: KUharlotte Hornets Away: Toronto RaptorKUs, Winner: Toronto RaptorKUs
+Match #143- Home: Toronto RaptorKUs Away: New Orleans PeliKUns, Winner: Toronto RaptorKUs
+Match #144- Home: New Orleans PeliKUns Away: Toronto RaptorKUs, Winner: Toronto RaptorKUs
+Match #145- Home: Toronto RaptorKUs Away: KU Antonio Spurs, Winner: KU Antonio Spurs
+Match #146- Home: KU Antonio Spurs Away: Toronto RaptorKUs, Winner: KU Antonio Spurs
+Match #147- Home: Toronto RaptorKUs Away: Minnesota TimberKUs, Winner: Toronto RaptorKUs
+Match #148- Home: Minnesota TimberKUs Away: Toronto RaptorKUs, Winner: Toronto RaptorKUs
+Match #149- Home: Toronto RaptorKUs Away: Memphis KUrizzlies, Winner: Memphis KUrizzlies
+Match #150- Home: Memphis KUrizzlies Away: Toronto RaptorKUs, Winner: Memphis KUrizzlies
+Match #151- Home: KUladelphia 76ers Away: WasKUngton Wizards, Winner: WasKUngton Wizards
+Match #152- Home: WasKUngton Wizards Away: KUladelphia 76ers, Winner: WasKUngton Wizards
+Match #153- Home: KUladelphia 76ers Away: KUleveland Cavaliers, Winner: KUladelphia 76ers
+Match #154- Home: KUleveland Cavaliers Away: KUladelphia 76ers, Winner: KUleveland Cavaliers
+Match #155- Home: KUladelphia 76ers Away: Houston RocKUts, Winner: Houston RocKUts
+Match #156- Home: Houston RocKUts Away: KUladelphia 76ers, Winner: Houston RocKUts
+Match #157- Home: KUladelphia 76ers Away: Atlanta HawKU, Winner: Atlanta HawKU
+Match #158- Home: Atlanta HawKU Away: KUladelphia 76ers, Winner: Atlanta HawKU
+Match #159- Home: KUladelphia 76ers Away: KUharlotte Hornets, Winner: KUharlotte Hornets
+Match #160- Home: KUharlotte Hornets Away: KUladelphia 76ers, Winner: KUharlotte Hornets
+Match #161- Home: KUladelphia 76ers Away: New Orleans PeliKUns, Winner: New Orleans PeliKUns
+Match #162- Home: New Orleans PeliKUns Away: KUladelphia 76ers, Winner: New Orleans PeliKUns
+Match #163- Home: KUladelphia 76ers Away: KU Antonio Spurs, Winner: KU Antonio Spurs
+Match #164- Home: KU Antonio Spurs Away: KUladelphia 76ers, Winner: KU Antonio Spurs
+Match #165- Home: KUladelphia 76ers Away: Minnesota TimberKUs, Winner: Minnesota TimberKUs
+Match #166- Home: Minnesota TimberKUs Away: KUladelphia 76ers, Winner: Minnesota TimberKUs
+Match #167- Home: KUladelphia 76ers Away: Memphis KUrizzlies, Winner: Memphis KUrizzlies
+Match #168- Home: Memphis KUrizzlies Away: KUladelphia 76ers, Winner: Memphis KUrizzlies
+Match #169- Home: WasKUngton Wizards Away: KUleveland Cavaliers, Winner: WasKUngton Wizards
+Match #170- Home: KUleveland Cavaliers Away: WasKUngton Wizards, Winner: WasKUngton Wizards
+Match #171- Home: WasKUngton Wizards Away: Houston RocKUts, Winner: WasKUngton Wizards
+Match #172- Home: Houston RocKUts Away: WasKUngton Wizards, Winner: WasKUngton Wizards
+Match #173- Home: WasKUngton Wizards Away: Atlanta HawKU, Winner: Atlanta HawKU
+Match #174- Home: Atlanta HawKU Away: WasKUngton Wizards, Winner: Atlanta HawKU
+Match #175- Home: WasKUngton Wizards Away: KUharlotte Hornets, Winner: WasKUngton Wizards
+Match #176- Home: KUharlotte Hornets Away: WasKUngton Wizards, Winner: WasKUngton Wizards
+Match #177- Home: WasKUngton Wizards Away: New Orleans PeliKUns, Winner: WasKUngton Wizards
+Match #178- Home: New Orleans PeliKUns Away: WasKUngton Wizards, Winner: WasKUngton Wizards
+Match #179- Home: WasKUngton Wizards Away: KU Antonio Spurs, Winner: KU Antonio Spurs
+Match #180- Home: KU Antonio Spurs Away: WasKUngton Wizards, Winner: KU Antonio Spurs
+Match #181- Home: WasKUngton Wizards Away: Minnesota TimberKUs, Winner: WasKUngton Wizards
+Match #182- Home: Minnesota TimberKUs Away: WasKUngton Wizards, Winner: WasKUngton Wizards
+Match #183- Home: WasKUngton Wizards Away: Memphis KUrizzlies, Winner: Memphis KUrizzlies
+Match #184- Home: Memphis KUrizzlies Away: WasKUngton Wizards, Winner: Memphis KUrizzlies
+Match #185- Home: KUleveland Cavaliers Away: Houston RocKUts, Winner: Houston RocKUts
+Match #186- Home: Houston RocKUts Away: KUleveland Cavaliers, Winner: Houston RocKUts
+Match #187- Home: KUleveland Cavaliers Away: Atlanta HawKU, Winner: Atlanta HawKU
+Match #188- Home: Atlanta HawKU Away: KUleveland Cavaliers, Winner: Atlanta HawKU
+Match #189- Home: KUleveland Cavaliers Away: KUharlotte Hornets, Winner: KUharlotte Hornets
+Match #190- Home: KUharlotte Hornets Away: KUleveland Cavaliers, Winner: KUharlotte Hornets
+Match #191- Home: KUleveland Cavaliers Away: New Orleans PeliKUns, Winner: New Orleans PeliKUns
+Match #192- Home: New Orleans PeliKUns Away: KUleveland Cavaliers, Winner: New Orleans PeliKUns
+Match #193- Home: KUleveland Cavaliers Away: KU Antonio Spurs, Winner: KU Antonio Spurs
+Match #194- Home: KU Antonio Spurs Away: KUleveland Cavaliers, Winner: KU Antonio Spurs
+Match #195- Home: KUleveland Cavaliers Away: Minnesota TimberKUs, Winner: Minnesota TimberKUs
+Match #196- Home: Minnesota TimberKUs Away: KUleveland Cavaliers, Winner: Minnesota TimberKUs
+Match #197- Home: KUleveland Cavaliers Away: Memphis KUrizzlies, Winner: Memphis KUrizzlies
+Match #198- Home: Memphis KUrizzlies Away: KUleveland Cavaliers, Winner: Memphis KUrizzlies
+Match #199- Home: Houston RocKUts Away: Atlanta HawKU, Winner: Atlanta HawKU
+Match #200- Home: Atlanta HawKU Away: Houston RocKUts, Winner: Atlanta HawKU
+Match #201- Home: Houston RocKUts Away: KUharlotte Hornets, Winner: Houston RocKUts
+Match #202- Home: KUharlotte Hornets Away: Houston RocKUts, Winner: Houston RocKUts
+Match #203- Home: Houston RocKUts Away: New Orleans PeliKUns, Winner: Houston RocKUts
+Match #204- Home: New Orleans PeliKUns Away: Houston RocKUts, Winner: Houston RocKUts
+Match #205- Home: Houston RocKUts Away: KU Antonio Spurs, Winner: KU Antonio Spurs
+Match #206- Home: KU Antonio Spurs Away: Houston RocKUts, Winner: KU Antonio Spurs
+Match #207- Home: Houston RocKUts Away: Minnesota TimberKUs, Winner: Houston RocKUts
+Match #208- Home: Minnesota TimberKUs Away: Houston RocKUts, Winner: Houston RocKUts
+Match #209- Home: Houston RocKUts Away: Memphis KUrizzlies, Winner: Memphis KUrizzlies
+Match #210- Home: Memphis KUrizzlies Away: Houston RocKUts, Winner: Memphis KUrizzlies
+Match #211- Home: Atlanta HawKU Away: KUharlotte Hornets, Winner: Atlanta HawKU
+Match #212- Home: KUharlotte Hornets Away: Atlanta HawKU, Winner: Atlanta HawKU
+Match #213- Home: Atlanta HawKU Away: New Orleans PeliKUns, Winner: Atlanta HawKU
+Match #214- Home: New Orleans PeliKUns Away: Atlanta HawKU, Winner: Atlanta HawKU
+Match #215- Home: Atlanta HawKU Away: KU Antonio Spurs, Winner: Atlanta HawKU
+Match #216- Home: KU Antonio Spurs Away: Atlanta HawKU, Winner: Atlanta HawKU
+Match #217- Home: Atlanta HawKU Away: Minnesota TimberKUs, Winner: Atlanta HawKU
+Match #218- Home: Minnesota TimberKUs Away: Atlanta HawKU, Winner: Atlanta HawKU
+Match #219- Home: Atlanta HawKU Away: Memphis KUrizzlies, Winner: Atlanta HawKU
+Match #220- Home: Memphis KUrizzlies Away: Atlanta HawKU, Winner: Atlanta HawKU
+Match #221- Home: KUharlotte Hornets Away: New Orleans PeliKUns, Winner: KUharlotte Hornets
+Match #222- Home: New Orleans PeliKUns Away: KUharlotte Hornets, Winner: KUharlotte Hornets
+Match #223- Home: KUharlotte Hornets Away: KU Antonio Spurs, Winner: KU Antonio Spurs
+Match #224- Home: KU Antonio Spurs Away: KUharlotte Hornets, Winner: KU Antonio Spurs
+Match #225- Home: KUharlotte Hornets Away: Minnesota TimberKUs, Winner: KUharlotte Hornets
+Match #226- Home: Minnesota TimberKUs Away: KUharlotte Hornets, Winner: Minnesota TimberKUs
+Match #227- Home: KUharlotte Hornets Away: Memphis KUrizzlies, Winner: Memphis KUrizzlies
+Match #228- Home: Memphis KUrizzlies Away: KUharlotte Hornets, Winner: Memphis KUrizzlies
+Match #229- Home: New Orleans PeliKUns Away: KU Antonio Spurs, Winner: KU Antonio Spurs
+Match #230- Home: KU Antonio Spurs Away: New Orleans PeliKUns, Winner: KU Antonio Spurs
+Match #231- Home: New Orleans PeliKUns Away: Minnesota TimberKUs, Winner: Minnesota TimberKUs
+Match #232- Home: Minnesota TimberKUs Away: New Orleans PeliKUns, Winner: Minnesota TimberKUs
+Match #233- Home: New Orleans PeliKUns Away: Memphis KUrizzlies, Winner: Memphis KUrizzlies
+Match #234- Home: Memphis KUrizzlies Away: New Orleans PeliKUns, Winner: Memphis KUrizzlies
+Match #235- Home: KU Antonio Spurs Away: Minnesota TimberKUs, Winner: KU Antonio Spurs
+Match #236- Home: Minnesota TimberKUs Away: KU Antonio Spurs, Winner: KU Antonio Spurs
+Match #237- Home: KU Antonio Spurs Away: Memphis KUrizzlies, Winner: KU Antonio Spurs
+Match #238- Home: Memphis KUrizzlies Away: KU Antonio Spurs, Winner: KU Antonio Spurs
+Match #239- Home: Minnesota TimberKUs Away: Memphis KUrizzlies, Winner: Memphis KUrizzlies
+Match #240- Home: Memphis KUrizzlies Away: Minnesota TimberKUs, Winner: Memphis KUrizzlies

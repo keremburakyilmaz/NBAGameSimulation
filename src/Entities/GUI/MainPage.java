@@ -1,6 +1,7 @@
 package Entities.GUI;
 
 import Entities.User;
+import Exceptions.*;
 
 import javax.swing.*;
 import java.awt.*;
@@ -31,6 +32,18 @@ public class MainPage extends JFrame {
                         } catch (FileNotFoundException ex) {
                             throw new RuntimeException(ex);
                         } catch (IOException ex) {
+                            throw new RuntimeException(ex);
+                        } catch (InvalidAgeException ex) {
+                            throw new RuntimeException(ex);
+                        } catch (InvalidNameException ex) {
+                            throw new RuntimeException(ex);
+                        } catch (AlreadyExistsException ex) {
+                            throw new RuntimeException(ex);
+                        } catch (InvalidPasswordException ex) {
+                            throw new RuntimeException(ex);
+                        } catch (InvalidUsernameException ex) {
+                            throw new RuntimeException(ex);
+                        } catch (InvalidEmailException ex) {
                             throw new RuntimeException(ex);
                         }
                     }
@@ -69,6 +82,8 @@ public class MainPage extends JFrame {
                         try {
                             new ChangeInformationPage(user);
                         } catch (FileNotFoundException ex) {
+                            throw new RuntimeException(ex);
+                        } catch (IOException ex) {
                             throw new RuntimeException(ex);
                         }
                     }
